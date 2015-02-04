@@ -1,0 +1,17 @@
+{
+    "name": "Easy Contacts Opener",
+    "version": "1.4",
+    "short_name": "ECO",
+    "description": "Click to open Contacts easier",
+    "manifest_version": 2,
+    "icons": {
+      "128": "icon_128.png"
+    },
+    "permissions": [
+    ],
+    "browser_action": {
+        "default_icon": "icon_128.png",
+        "default_title": "Easy Contacts Opener",
+        "default_popup": "popup.html"
+    }
+}
