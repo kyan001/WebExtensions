@@ -1,0 +1,18 @@
+{
+  "name": "Colorful Snake",
+  "version": "1.0",
+  "description": "Snake game with colorful body.",
+  "icons": {  
+        "128": "icon_128.png"  
+    },  
+  "app": {
+    "urls": [
+      "http://www.superfarmer.info/colorful.html"
+	],
+    "launch": {
+      "web_url": "http://www.superfarmer.info/colorful.html"
+    }
+  },
+  "permissions": [
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "SuperFarmer.net",
+  "version": "1.0",
+  "description": "Visit SuperFarmer.net. 100% no ADs. Green, Convenient and Comfortable.",
+  "icons": {  
+        "128": "icon_128.png"  
+    },  
+  "app": {
+    "urls": [
+      "http://www.superfarmer.net/"
+	],
+    "launch": {
+      "web_url": "http://www.superfarmer.net/"
+    }
+  },
+  "permissions": [
+    "notifications"
+  ]
+}

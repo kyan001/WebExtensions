@@ -1,0 +1,4 @@
+Super cool snake game -- Colorful Snake!
+
+Mouse Only, and you know when you see it.
+Level up and get more effects!
