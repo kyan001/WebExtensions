@@ -1,8 +1,8 @@
 {
     "name": "Easy Contacts Opener",
-    "version": "1.6",
+    "version": "1.7",
     "short_name": "ECO",
-    "description": "1-Click to open 'Google Contacts'",
+    "description": "1-click to open 'Google Contacts'",
     "manifest_version": 2,
     "icons": {
         "128": "icon_128.png"
