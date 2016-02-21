@@ -16,7 +16,7 @@ function backToInit(){
 function updateTimerIcon(){
     if (current == 0) {
         backToInit();
-        alert("Time Up");
+        alert("- Time is up!\n- 时间到\n- Le temps est écoulé\n- 時間切れ\n- Se acabó el tiempo\n\nEnjoy your time!");
     }
     if( running == true ){
         counter = setTimeout("updateTimerIcon()",60000);
