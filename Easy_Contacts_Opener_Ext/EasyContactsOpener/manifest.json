@@ -1,19 +1,18 @@
 {
     "name": "Easy Contacts Opener",
-    "version": "1.5",
+    "version": "1.6",
     "short_name": "ECO",
-    "description": "Click to open Contacts easier",
+    "description": "1-Click to open 'Google Contacts'",
     "manifest_version": 2,
     "icons": {
         "128": "icon_128.png"
-        },
-    "permissions": [
-        ],
+    },
+    "permissions": [],
     "background": {
         "scripts": ["popup.js"]
-        },
+    },
     "browser_action": {
         "default_icon": "icon_128.png",
         "default_title": "Easy Contacts Opener"
-        }
+    }
 }
