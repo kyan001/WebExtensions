@@ -2,7 +2,7 @@
     "name": "Timer 25",
     "version": "1.6.0",
     "short_name": "T25",
-    "description": "Pomodoro Timer. 1-click to set a 25 minutes timer.",
+    "description": "One-click to set a 25 minutes timer.",
     "manifest_version": 2,
     "icons": {
       "128": "Timer.png"
