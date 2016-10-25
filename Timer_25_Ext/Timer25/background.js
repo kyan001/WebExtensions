@@ -1,26 +1,32 @@
 // @author Kyan
 var current
 var count_timer
+var alert_timer
 var running = false
 
 function reset(){
     current = 25
     clearTimeout(count_timer);
+    clearTimeout(alert_timer);
     chrome.browserAction.setBadgeText({text: ""});
 }
 
 function updateTimerIcon(){
     if (current == 0) {
         stop()
-        popAlert()
+        popNotification()
         return
     }
-    count_timer = setTimeout("updateTimerIcon()", 60000);
+    count_timer = setTimeout("updateTimerIcon()", 60000);  // per 60 sec
     chrome.browserAction.setBadgeText({text: current.toString()+"m"});
     current--;
 }
 
 function popAlert(){
+    alert("TIME'S UP!\n\n" + (new Date()).toLocaleTimeString())
+}
+
+function popNotification(){
     messages = [
         'Enjoy your time.',
         "Yesterday's the past, tomorrow's the future, but today is a gift. That's why it's called the present.",
@@ -49,6 +55,7 @@ function popAlert(){
         isClickable: true,  // show hand pointer when hover
         requireInteraction: true,  // do not close until click
     })
+    alert_timer = setTimeout('popAlert()', 60000);  // 1 min
 }
 
 function start(){
@@ -64,8 +71,10 @@ function stop(){
 function clickToggle() {
     reset()
     if (running) {
+        // stop() -> reset()
         stop()
     } else {
+        // start() -> updateTimerIcon()*25 -> popNotification() -> popAlert()
         start()
     }
 }
@@ -74,5 +83,6 @@ chrome.browserAction.onClicked.addListener(clickToggle);
 chrome.browserAction.setIcon({path: "Timer.png"});
 chrome.browserAction.setBadgeText({text: ""});
 chrome.notifications.onClicked.addListener(function(notificationid){
+    clearTimeout(alert_timer)
     chrome.notifications.clear(notificationid)
 })

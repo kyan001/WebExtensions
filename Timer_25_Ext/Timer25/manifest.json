@@ -1,6 +1,6 @@
 {
     "name": "Timer 25",
-    "version": "1.5.0",
+    "version": "1.6.0",
     "short_name": "T25",
     "description": "Pomodoro Timer. 1-click to set a 25 minutes timer.",
     "manifest_version": 2,
