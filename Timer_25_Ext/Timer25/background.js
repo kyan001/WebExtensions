@@ -32,7 +32,7 @@ function updateTimerIcon(){
         popMessageBox()
         return
     }
-    count_timer = setTimeout("updateTimerIcon()", 60);  // per 60 sec
+    count_timer = setTimeout("updateTimerIcon()", 60000);  // per 60 sec
     chrome.browserAction.setBadgeText({text: current.toString()+"m"});
     current--;
 }
