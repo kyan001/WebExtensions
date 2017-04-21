@@ -1,6 +1,6 @@
 {
     "name": "Timer 25",
-    "version": "1.6.0",
+    "version": "1.7.0",
     "short_name": "T25",
     "description": "One-click to set a 25 minutes timer.",
     "manifest_version": 2,
@@ -10,8 +10,13 @@
     "background": { "scripts": ["background.js"] },
     "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
     "permissions": [
-        "notifications"
+        "notifications",
+        "storage"
     ],
+    "options_ui": {
+        "page": "options.html",
+        "chrome_style": true
+    },
     "browser_action": {
         "default_icon": "Timer.png",
         "default_title": "Timer 25"
