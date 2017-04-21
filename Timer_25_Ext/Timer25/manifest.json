@@ -1,6 +1,6 @@
 {
     "name": "Timer 25",
-    "version": "1.7.0",
+    "version": "1.7.1",
     "short_name": "T25",
     "description": "One-click to set a 25 minutes timer.",
     "manifest_version": 2,
