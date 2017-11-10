@@ -1,8 +1,8 @@
 {
-    "name": "Timer 25",
-    "version": "1.7.1",
+    "name": "Timer 25: the Minimalist Timer",
+    "version": "1.7.2",
     "short_name": "T25",
-    "description": "One-click to set a 25 minutes timer.",
+    "description": "A minimalist 25 minutes timer, simple and easy to use.",
     "manifest_version": 2,
     "icons": {
       "128": "Timer.png"
