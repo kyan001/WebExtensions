@@ -1,0 +1,19 @@
+{
+    "extName": {
+        "message": "Timer 25: el Temporizador Minimalista",
+        "description": "Extension name."
+    },
+    "extDesc": {
+        "message": "Un temporizador minimalista de 25 minutos, simple y fácil de usar. ",
+        "description": "Extension description for manifest.json"
+    },
+    "timeUp": {
+        "message": "¡SE ACABÓ EL TIEMPO! "
+    },
+    "saved": {
+        "message": "¡Salvado! "
+    },
+    "messageBoxStyle": {
+        "message": "Estilo del cuadro de mensaje:"
+    }
+}

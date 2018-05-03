@@ -1,0 +1,19 @@
+{
+    "extName": {
+        "message": "Timer 25: ミニマリスト タイマー",
+        "description": "Extension name."
+    },
+    "extDesc": {
+        "message": "ザー・ミニマリズム・タイマー25，シンプルで使いやすい。",
+        "description": "Extension description for manifest.json"
+    },
+    "timeUp": {
+        "message": "時間切れ！"
+    },
+    "saved": {
+        "message": "保存しました！"
+    },
+    "messageBoxStyle": {
+        "message": "メッセージボックスのスタイル："
+    }
+}

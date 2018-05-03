@@ -1,0 +1,19 @@
+{
+    "extName": {
+        "message": "Timer 25: 极简计时",
+        "description": "Extension name."
+    },
+    "extDesc": {
+        "message": "一个极简的 25 分钟计时器，简单、可靠。",
+        "description": "Extension description for manifest.json"
+    },
+    "timeUp": {
+        "message": "时间到！"
+    },
+    "saved": {
+        "message": "已保存！"
+    },
+    "messageBoxStyle": {
+        "message": "请选择提示样式："
+    }
+}

@@ -11,34 +11,33 @@
     </head>
     <body>
         <h1>
-            Message box style:
-            <span class='status' id='status-notif'></span>
-            <span class='status' id='status-alert'></span>
+            <span id="msg-box-style-label"></span>
+            <span id="status-notif" class="status"></span>
+            <span id="status-alert" class="status"></span>
         </h1>
         <table>
             <tbody>
                 <tr>
                     <td>
-                        <input type="radio" name="msg-style" value="notif"></input>
+                        <input type="radio" name="msg-style" value="notif">
                     </td>
                     <td>
-                        <img src='notif_style.jpg' style='width: 100%'>
-
+                        <img src="notif_style.jpg" style="width: 100%">
                     </td>
                     <td>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="radio" name="msg-style" value="alert"></input>
+                        <input type="radio" name="msg-style" value="alert">
                     </td>
                     <td>
-                        <img src='alert_style.jpg' style='width: 100%'>
+                        <img src="alert_style.jpg" style="width: 100%">
                     </td>
                 </tr>
             </tbody>
         </table>
-        <div id='status'></div>
+        <div id="status"></div>
 
         <script src="options.js"></script>
     </body>

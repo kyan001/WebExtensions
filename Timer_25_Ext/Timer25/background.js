@@ -40,7 +40,7 @@ function updateTimerIcon(){
 function popAlert(){
     message_index = Math.round(Math.random()*(messages.length-1))
     message = '"' + messages[message_index] + '"'
-    alert("TIME'S UP!" + '\n\n' + message + '\n\n' + (new Date()).toLocaleTimeString())
+    alert(chrome.i18n.getMessage("timeUp") + '\n\n' + message + '\n\n' + (new Date()).toLocaleTimeString())
 }
 
 function popNotification(){
@@ -49,7 +49,7 @@ function popNotification(){
     chrome.notifications.create({
         type: 'basic',
         iconUrl: 'Timer.png',
-        title: "TIME'S UP",
+        title: chrome.i18n.getMessage("timeUp"),
         message: message,
         contextMessage: (new Date()).toLocaleTimeString(),  // in gray text
         eventTime: Date.now(),  // add a event time stamp

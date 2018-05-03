@@ -6,8 +6,9 @@ function load_options(){
                 msg_style_ele[i].checked = true
             }
         }
-    });
+    })
 }
+
 function save_options(){
     var msg_style_ele = document.getElementsByName('msg-style')
     var msg_style = 'notif'  // default
@@ -17,15 +18,20 @@ function save_options(){
         }
     }
     chrome.storage.sync.set({msgStyle: msg_style}, function(){
-        var status = document.getElementById('status-' + msg_style);
-        status.textContent = 'Saved!';
+        var status = document.getElementById('status-' + msg_style)
+        status.textContent = chrome.i18n.getMessage("saved")
         setTimeout(function() {
-            status.textContent = '';
-        }, 1000);
-    });
+            status.textContent = ''
+        }, 1000)
+    })
 }
 
-document.addEventListener('DOMContentLoaded', load_options);
+function i18n(){
+    document.getElementById("msg-box-style-label").innerHTML = chrome.i18n.getMessage("messageBoxStyle")
+}
+
+document.addEventListener('DOMContentLoaded', load_options)
+document.addEventListener('DOMContentLoaded', i18n)
 document.getElementsByName('msg-style').forEach(function(val, ind, arr){
-    arr[ind].addEventListener('click', save_options);
+    arr[ind].addEventListener('click', save_options)
 })

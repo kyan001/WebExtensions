@@ -1,8 +1,8 @@
 {
-    "name": "Timer 25: the Minimalist Timer",
-    "version": "1.7.2",
+    "name": "__MSG_extName__",
+    "version": "1.8.3",
     "short_name": "T25",
-    "description": "A minimalist 25 minutes timer, simple and easy to use.",
+    "description": "__MSG_extDesc__",
     "manifest_version": 2,
     "icons": {
       "128": "Timer.png"
@@ -20,5 +20,6 @@
     "browser_action": {
         "default_icon": "Timer.png",
         "default_title": "Timer 25"
-    }
+    },
+    "default_locale": "en"
 }
