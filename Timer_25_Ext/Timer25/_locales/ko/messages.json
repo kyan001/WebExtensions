@@ -1,0 +1,19 @@
+{
+    "extName": {
+        "message": "Timer 25: 미니멀리스트 타이머",
+        "description": "Extension name."
+    },
+    "extDesc": {
+        "message": "최소 25 분 타이머, 간단하고 사용하기 쉽습니다. ",
+        "description": "Extension description for manifest.json"
+    },
+    "timeUp": {
+        "message": "시간의 최대! "
+    },
+    "saved": {
+        "message": "저장되었습니다! "
+    },
+    "messageBoxStyle": {
+        "message": "메시지 상자 스타일: "
+    }
+}
