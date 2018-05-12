@@ -4,7 +4,7 @@
         "description": "Extension name."
     },
     "extDesc": {
-        "message": "Minimalistyczny zegar 25-minutowy, prosty i łatwy w użyciu. ",
+        "message": "Minimalistyczny zegar 25-minutowy. Prosty, niezawodny i łatwy w użyciu. ",
         "description": "Extension description for manifest.json"
     },
     "timeUp": {
