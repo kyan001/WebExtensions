@@ -1,0 +1,19 @@
+{
+    "extName": {
+        "message": "Timer 25: минималистский таймер",
+        "description": "Extension name."
+    },
+    "extDesc": {
+        "message": "Минималистский 25-минутный таймер, простой и простой в использовании. ",
+        "description": "Extension description for manifest.json"
+    },
+    "timeUp": {
+        "message": "ВРЕМЯ ВЫШЛО! "
+    },
+    "saved": {
+        "message": "Сохраненный! "
+    },
+    "messageBoxStyle": {
+        "message": "Стиль сообщения: "
+    }
+}
