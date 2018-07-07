@@ -1,6 +1,6 @@
 # Timer 25: the Minimalist Timer
 
-> A minimalist 25 minutes timer. Simple，reliable and easy to use. 
+> A minimalist 25 minutes timer. Simple, reliable and easy to use.
 
 * 1 click to set a 25 Minute Timer.
 * Perfect for Pomodoro Technique / Tomato Timer.
@@ -8,18 +8,18 @@
 * Nearly 0 Memory/CPU consumption with a better experience!
 * Open source software
 
-## How to use:
+## How to use
 * START from a fixed 25:00.
 * STOP at 0:00 and inform you by a popup alert/notification.
 * When counting down, click again to CANCEL the timer.
 
 **Focus on one dedicated function, and make it great.**
 
-https://github.com/kyan001/ChromeMyExtens/tree/master/Timer_25_Ext
+[Github Project Page](https://github.com/kyan001/ChromeMyExtens/tree/master/Timer_25_Ext)
 
 ************
 
-## Updates:
+## Updates
 * 1.8.0:
     * Now support English/Español/中文/日本語/Français/Deutsch/한국어/Polski/Português/Русский/Italiana.
 * 1.7.0:
