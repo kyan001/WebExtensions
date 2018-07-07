@@ -4,7 +4,7 @@
         "description": "Extension name."
     },
     "extDesc": {
-        "message": "A minimalist 25 minutes timer. Simple，reliable and easy to use. ",
+        "message": "A minimalist 25 minutes timer. Simple, reliable and easy to use. ",
         "description": "Extension description for manifest.json"
     },
     "timeUp": {
