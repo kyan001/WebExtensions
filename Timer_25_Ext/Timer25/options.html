@@ -3,41 +3,45 @@
     <head>
         <title>Timer 25 Options</title>
         <style>
-            .status {
+            #status {
                 color: green;
                 float: right;
+                display: none;
+            }
+            img.as-radio {
+                cursor: pointer;
+            }
+            .img-responsive {
+                width: 100%;
+                height: auto;
             }
         </style>
     </head>
     <body>
         <h1>
-            <span id="msg-box-style-label"></span>
-            <span id="status-notif" class="status"></span>
-            <span id="status-alert" class="status"></span>
+            <span id="msgstyle__label"></span>
+            <span id="status"></span>
         </h1>
         <table>
             <tbody>
                 <tr>
                     <td>
-                        <input type="radio" name="msg-style" value="notif">
+                        <input type="radio" name="msgstyle" value="notif">
                     </td>
                     <td>
-                        <img src="notif_style.jpg" style="width: 100%">
-                    </td>
-                    <td>
+                        <img class="as-radio img-responsive" src="img/notif_style.jpg">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="radio" name="msg-style" value="alert">
+                        <input type="radio" name="msgstyle" value="alert">
                     </td>
                     <td>
-                        <img src="alert_style.jpg" style="width: 100%">
+                        <img class="as-radio img-responsive" src="img/alert_style.jpg">
                     </td>
                 </tr>
             </tbody>
         </table>
-        <div id="status"></div>
 
         <script src="options.js"></script>
     </body>
