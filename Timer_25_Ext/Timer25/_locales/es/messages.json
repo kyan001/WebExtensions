@@ -14,9 +14,18 @@
         "message": "¡Salvado! "
     },
     "messageBoxStyle": {
-        "message": "Estilo del cuadro de mensaje:"
+        "message": "Estilo del cuadro de mensaje: "
+    },
+    "messageBoxHere": {
+        "message": "Cuando se acabe el tiempo, se mostrará este cuadro de mensaje. "
+    },
+    "extraOptions": {
+        "message": "Opciones adicionales: "
     },
     "isNotANumber": {
-        "message": "no es un numero."
+        "message": "no es un numero. "
+    },
+    "playSoundOption": {
+        "message": "Reproduzca un sonido cuando se acabe el tiempo. "
     }
 }

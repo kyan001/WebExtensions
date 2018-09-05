@@ -16,7 +16,16 @@
     "messageBoxStyle": {
         "message": "Стиль сообщения: "
     },
+    "messageBoxHere": {
+        "message": "Когда время закончится, появится это окно сообщения. "
+    },
+    "extraOptions": {
+        "message": "Дополнительные опции: "
+    },
     "isNotANumber": {
-        "message": "не является числом."
+        "message": "не является числом. "
+    },
+    "playSoundOption": {
+        "message": "Воспроизведение звука при увеличении времени. "
     }
 }

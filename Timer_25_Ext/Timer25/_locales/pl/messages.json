@@ -16,7 +16,16 @@
     "messageBoxStyle": {
         "message": "Styl skrzynki wiadomości: "
     },
+    "messageBoxHere": {
+        "message": "Gdy czas się skończy, pojawi się to okno komunikatu. "
+    },
+    "extraOptions": {
+        "message": "Dodatkowe opcje: "
+    },
     "isNotANumber": {
-        "message": "nie jest liczbą."
+        "message": "nie jest liczbą. "
+    },
+    "playSoundOption": {
+        "message": "Odtwórz dźwięk, gdy czas się skończy. "
     }
 }

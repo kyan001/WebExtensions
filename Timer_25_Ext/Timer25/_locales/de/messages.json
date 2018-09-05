@@ -16,7 +16,16 @@
     "messageBoxStyle": {
         "message": "Nachricht ch Stil: "
     },
+    "messageBoxHere": {
+        "message": "Wenn die Zeit abgelaufen ist, wird dieses Meldungsfeld angezeigt. "
+    },
+    "extraOptions": {
+        "message": "Extra Optionen: "
+    },
     "isNotANumber": {
-        "message": "ist keine Nummer."
+        "message": "ist keine Nummer. "
+    },
+    "playSoundOption": {
+        "message": "Spielen Sie einen Ton, wenn die Zeit abgelaufen ist. "
     }
 }

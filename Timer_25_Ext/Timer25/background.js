@@ -3,6 +3,7 @@ var current
 var count_timer
 var alert_timer
 var running = false
+var sound = new Audio("sound.mp3")
 var messages = [
     'Enjoy your time.',
     "Yesterday's the past, tomorrow's the future, but today is a gift. That's why it's called the present.",
@@ -22,8 +23,8 @@ var messages = [
 
 function reset(){
     current = 25
-    clearTimeout(count_timer);
-    chrome.browserAction.setBadgeText({text: ""});
+    clearTimeout(count_timer)
+    chrome.browserAction.setBadgeText({text: ""})
 }
 
 function updateTimerIcon(){
@@ -32,9 +33,9 @@ function updateTimerIcon(){
         popMessageBox()
         return
     }
-    count_timer = setTimeout("updateTimerIcon()", 60000);  // per 60 sec
-    chrome.browserAction.setBadgeText({text: current.toString()+"m"});
-    current--;
+    count_timer = setTimeout("updateTimerIcon()", 60000)  // per 60 sec
+    chrome.browserAction.setBadgeText({text: current.toString()+"m"})
+    current--
 }
 
 function popAlert(){
@@ -59,18 +60,25 @@ function popNotification(){
 }
 
 function popMessageBox(){
-    chrome.storage.sync.get({msgStyle: 'notif'}, function(items){
+    chrome.storage.sync.get({msgStyle: 'notif', playSound: 'no'}, function(items){
+        switch (items.playSound) {  // sound should triggered before alarm
+            case 'yes':
+                sound.play()
+                break
+            default:
+                break
+        }
         switch (items.msgStyle) {
             case 'notif':
                 popNotification()
-                break;
+                break
             case 'alert':
                 popAlert()
-                break;
+                break
             default:
                 alert('Message Style Option ' + ites.msgStyle + ' is not valid')
         }
-    });
+    })
 }
 
 function start(){
@@ -94,9 +102,9 @@ function clickToggle() {
     }
 }
 
-chrome.browserAction.onClicked.addListener(clickToggle);
-chrome.browserAction.setIcon({path: "Timer.png"});
-chrome.browserAction.setBadgeText({text: ""});
+chrome.browserAction.onClicked.addListener(clickToggle)
+chrome.browserAction.setIcon({path: "Timer.png"})
+chrome.browserAction.setBadgeText({text: ""})
 chrome.notifications.onClicked.addListener(function(notificationid){
     chrome.notifications.clear(notificationid)
 })

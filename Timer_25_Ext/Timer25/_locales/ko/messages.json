@@ -16,7 +16,16 @@
     "messageBoxStyle": {
         "message": "메시지 상자 스타일: "
     },
+    "messageBoxHere": {
+        "message": "시간이되면이 메시지 상자가 나타납니다. "
+    },
+    "extraOptions": {
+        "message": "추가 옵션: "
+    },
     "isNotANumber": {
-        "message": "은 숫자가 아닙니다."
+        "message": "은 숫자가 아닙니다. "
+    },
+    "playSoundOption": {
+        "message": "시간이되면 소리를냅니다. "
     }
 }

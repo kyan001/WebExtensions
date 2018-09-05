@@ -16,7 +16,16 @@
     "messageBoxStyle": {
         "message": "Style de messagerie: "
     },
+    "messageBoxHere": {
+        "message": "Lorsque le temps est écoulé, cette boîte de message apparaîtra. "
+    },
+    "extraOptions": {
+        "message": "Options supplémentaires: "
+    },
     "isNotANumber": {
-        "message": "n'est pas un nombre."
+        "message": "n'est pas un nombre. "
+    },
+    "playSoundOption": {
+        "message": "Jouez un son lorsque le temps est écoulé. "
     }
 }

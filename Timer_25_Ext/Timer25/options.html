@@ -3,44 +3,79 @@
     <head>
         <title>Timer 25 Options</title>
         <style>
-            #status {
-                color: green;
-                float: right;
-                display: none;
-            }
-            img.as-radio {
+            /* tools */
+            .as-pointer {
                 cursor: pointer;
             }
             .img-responsive {
                 width: 100%;
                 height: auto;
             }
+            .text-blue {
+                color: CornflowerBlue;
+            }
+            .text-green {
+                color: green;
+            }
+            .hidden {
+                display: none;
+            }
+            /* commons */
+            table {
+                padding: 9px;
+            }
+            /* specified */
+            #status {
+                position: fixed;
+                bottom: 0;
+                right: 0;
+            }
         </style>
     </head>
     <body>
-        <h1>
+        <h1 id="status" class="hidden text-green"></h1>
+        <h2>
             <span id="msgstyle__label"></span>
-            <span id="status"></span>
-        </h1>
+        </h2>
         <table>
-            <tbody>
-                <tr>
-                    <td>
-                        <input type="radio" name="msgstyle" value="notif">
-                    </td>
-                    <td>
-                        <img class="as-radio img-responsive" src="img/notif_style.jpg">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="radio" name="msgstyle" value="alert">
-                    </td>
-                    <td>
-                        <img class="as-radio img-responsive" src="img/alert_style.jpg">
-                    </td>
-                </tr>
-            </tbody>
+            <tr>
+                <td>
+                    <input type="radio" name="msgstyle" value="notif">
+                </td>
+                <td>
+                    <img class="as-pointer as-msgstyle-radio img-responsive" src="img/notif_style.jpg">
+                </td>
+                <td>
+                    <span id="msgstyle_notif__btn" class="as-pointer text-blue">▶</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="msgstyle" value="alert">
+                </td>
+                <td>
+                    <img class="as-pointer as-msgstyle-radio img-responsive" src="img/alert_style.jpg">
+                </td>
+                <td>
+                    <span id="msgstyle_alert__btn" class="as-pointer text-blue">▶</span>
+                </td>
+            </tr>
+        </table>
+        <h2>
+            <span id="extraoption__label"></span>
+        </h2>
+        <table>
+            <tr>
+                <td>
+                    <input type="checkbox" name="playsound" value="yes">
+                </td>
+                <td>
+                    <span id="isplaysound" class="as-pointer as-playsound-checkbox"></span>
+                </td>
+                <td>
+                    <span id="playsound__btn" class="as-pointer text-blue">▶</span>
+                </td>
+            </tr>
         </table>
 
         <script src="options.js"></script>

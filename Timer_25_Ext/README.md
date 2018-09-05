@@ -15,6 +15,7 @@
 
 ## Extra functions
 * Enter "t25" in Chrome's address bar and press TAB to start a non-25 minutes timer.
+* [Optional] Play a sound when time's up.
 
 **Focus on one dedicated function, and make it great.**
 
@@ -23,9 +24,12 @@
 ************
 
 ## Updates
-* 1.9.0:
+* 1.10:
+    * Now you can choose to play a sound when time's up.
+    * Now you can press the ▶ to see an example of that option.
+* 1.9:
     * Now you can enter "t25" in Chrome's address bar and press TAB to start a non-25 minutes timer.
-* 1.8.0:
+* 1.8:
     * Now support English/Español/中文/日本語/Français/Deutsch/한국어/Polski/Português/Русский/Italiana.
-* 1.7.0:
+* 1.7:
     * Now you can choose between a popup alert, or a popup notification. A notification is more native but an alert is more noticeable.

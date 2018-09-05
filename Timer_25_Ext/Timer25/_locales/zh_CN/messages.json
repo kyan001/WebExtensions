@@ -16,7 +16,16 @@
     "messageBoxStyle": {
         "message": "请选择提示样式："
     },
+    "messageBoxHere": {
+        "message": "计时结束时，将会显示此提示框。"
+    },
+    "extraOptions": {
+        "message": "额外功能："
+    },
     "isNotANumber": {
         "message": "不是一个数字。"
+    },
+    "playSoundOption": {
+        "message": "计时结束时播放提示音。"
     }
 }

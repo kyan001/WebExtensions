@@ -16,7 +16,16 @@
     "messageBoxStyle": {
         "message": "メッセージボックスのスタイル："
     },
+    "messageBoxHere": {
+        "message": "時間が切ると、このメッセージボックスが表示されます。"
+    },
+    "extraOptions": {
+        "message": "その他のオプション："
+    },
     "isNotANumber": {
         "message": "は数字ではありません。"
+    },
+    "playSoundOption": {
+        "message": "時間がたつと音が鳴ります。"
     }
 }

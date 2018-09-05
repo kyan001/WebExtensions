@@ -16,7 +16,16 @@
     "messageBoxStyle": {
         "message": "Stile casella di messaggio: "
     },
+    "messageBoxHere": {
+        "message": "Quando il tempo è scaduto, verrà visualizzata questa finestra di messaggio. "
+    },
+    "extraOptions": {
+        "message": "Opzioni extra: "
+    },
     "isNotANumber": {
-        "message": "non è un numero."
+        "message": "non è un numero. "
+    },
+    "playSoundOption": {
+        "message": "Riproduci un suono quando il tempo è scaduto. "
     }
 }

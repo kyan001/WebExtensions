@@ -16,7 +16,16 @@
     "messageBoxStyle": {
         "message": "Estilo da caixa de mensagens: "
     },
+    "messageBoxHere": {
+        "message": "Quando o tempo acabar, esta caixa de mensagem será exibida. "
+    },
+    "extraOptions": {
+        "message": "Opções extras: "
+    },
     "isNotANumber": {
-        "message": "não é um número."
+        "message": "não é um número. "
+    },
+    "playSoundOption": {
+        "message": "Tocar um som quando o tempo acabar. "
     }
 }

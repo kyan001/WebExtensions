@@ -16,7 +16,16 @@
     "messageBoxStyle": {
         "message": "Message Box Style: "
     },
+    "messageBoxHere": {
+        "message": "When time's up, this message box will show. "
+    },
+    "extraOptions": {
+        "message": "Extra Options: "
+    },
     "isNotANumber": {
-        "message": "is not a number."
+        "message": "is not a number. "
+    },
+    "playSoundOption": {
+        "message": "Play a sound when time's up. "
     }
 }
