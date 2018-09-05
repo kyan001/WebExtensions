@@ -14,7 +14,7 @@
 * When counting down, click again to CANCEL the timer.
 
 ## Extra functions
-* Enter "t25" in Chrome's address bar and press TAB to start a non-25 minutes timer
+* Enter "t25" in Chrome's address bar and press TAB to start a non-25 minutes timer.
 
 **Focus on one dedicated function, and make it great.**
 
