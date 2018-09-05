@@ -61,22 +61,23 @@ function popNotification(){
 
 function popMessageBox(){
     chrome.storage.sync.get({msgStyle: 'notif', playSound: 'no'}, function(items){
-        switch (items.playSound) {  // sound should triggered before alarm
-            case 'yes':
-                sound.play()
-                break
-            default:
-                break
-        }
+        var msgBoxFunction
         switch (items.msgStyle) {
             case 'notif':
-                popNotification()
+                msgBoxFunction = popNotification
                 break
             case 'alert':
-                popAlert()
+                msgBoxFunction = popAlert
                 break
             default:
-                alert('Message Style Option ' + ites.msgStyle + ' is not valid')
+                alert('Message Style Option "' + ites.msgStyle + '" is not valid')
+                return false
+        }
+        if(items.playSound == 'yes'){
+            sound.play()
+            sound.addEventListener("ended", msgBoxFunction, false)  // pop alert after sound played. Or "alert()" will block the playing sound.
+        } else {
+            msgBoxFunction()
         }
     })
 }
