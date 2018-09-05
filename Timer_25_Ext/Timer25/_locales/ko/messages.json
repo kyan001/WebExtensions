@@ -15,5 +15,8 @@
     },
     "messageBoxStyle": {
         "message": "메시지 상자 스타일: "
+    },
+    "isNotANumber": {
+        "message": "은 숫자가 아닙니다."
     }
 }

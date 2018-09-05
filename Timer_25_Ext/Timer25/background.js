@@ -27,7 +27,7 @@ function reset(){
 }
 
 function updateTimerIcon(){
-    if (current == 0) {
+    if (current <= 0) {
         stop()
         popMessageBox()
         return
@@ -99,4 +99,15 @@ chrome.browserAction.setIcon({path: "Timer.png"});
 chrome.browserAction.setBadgeText({text: ""});
 chrome.notifications.onClicked.addListener(function(notificationid){
     chrome.notifications.clear(notificationid)
+})
+chrome.omnibox.onInputEntered.addListener(function(text, disposition){
+    // use chrome address bar and entered a number
+    if(isNaN(text)){
+        alert('"' + text + '" ' + chrome.i18n.getMessage("isNotANumber"))
+        return false
+    }
+    stop()
+    current = parseInt(text)
+    start()
+    return true
 })

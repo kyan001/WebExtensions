@@ -15,5 +15,8 @@
     },
     "messageBoxStyle": {
         "message": "Styl skrzynki wiadomości: "
+    },
+    "isNotANumber": {
+        "message": "nie jest liczbą."
     }
 }

@@ -15,5 +15,8 @@
     },
     "messageBoxStyle": {
         "message": "Estilo da caixa de mensagens: "
+    },
+    "isNotANumber": {
+        "message": "não é um número."
     }
 }

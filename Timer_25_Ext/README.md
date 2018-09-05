@@ -13,6 +13,9 @@
 * STOP at 0:00 and inform you by a popup alert/notification.
 * When counting down, click again to CANCEL the timer.
 
+## Extra functions
+* Enter "t25" in Chrome's address bar and press TAB to start a non-25 minutes timer
+
 **Focus on one dedicated function, and make it great.**
 
 [Github Project Page](https://github.com/kyan001/ChromeMyExtens/tree/master/Timer_25_Ext)
@@ -20,6 +23,8 @@
 ************
 
 ## Updates
+* 1.9.0:
+    * Now you can enter "t25" in Chrome's address bar and press TAB to start a non-25 minutes timer.
 * 1.8.0:
     * Now support English/Español/中文/日本語/Français/Deutsch/한국어/Polski/Português/Русский/Italiana.
 * 1.7.0:

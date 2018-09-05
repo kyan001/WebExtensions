@@ -1,14 +1,20 @@
 
 {
     "name": "__MSG_extName__",
-    "version": "1.8.15",
+    "version": "1.9.1",
     "short_name": "T25",
     "description": "__MSG_extDesc__",
     "manifest_version": 2,
     "icons": {
-      "128": "Timer.png"
+        "16": "Timer_16.png",
+        "128": "Timer_128.png"
     },
-    "background": { "scripts": ["background.js"] },
+    "omnibox": {
+        "keyword": "T25"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
     "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
     "permissions": [
         "notifications",

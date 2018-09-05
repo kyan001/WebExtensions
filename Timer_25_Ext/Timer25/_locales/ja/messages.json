@@ -15,5 +15,8 @@
     },
     "messageBoxStyle": {
         "message": "メッセージボックスのスタイル："
+    },
+    "isNotANumber": {
+        "message": "は数字ではありません。"
     }
 }

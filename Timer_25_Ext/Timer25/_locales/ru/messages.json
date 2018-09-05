@@ -15,5 +15,8 @@
     },
     "messageBoxStyle": {
         "message": "Стиль сообщения: "
+    },
+    "isNotANumber": {
+        "message": "не является числом."
     }
 }

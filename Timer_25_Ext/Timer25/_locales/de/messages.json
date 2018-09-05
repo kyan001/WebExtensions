@@ -15,5 +15,8 @@
     },
     "messageBoxStyle": {
         "message": "Nachricht ch Stil: "
+    },
+    "isNotANumber": {
+        "message": "ist keine Nummer."
     }
 }

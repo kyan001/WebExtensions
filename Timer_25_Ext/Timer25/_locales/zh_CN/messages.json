@@ -15,5 +15,8 @@
     },
     "messageBoxStyle": {
         "message": "请选择提示样式："
+    },
+    "isNotANumber": {
+        "message": "不是一个数字。"
     }
 }

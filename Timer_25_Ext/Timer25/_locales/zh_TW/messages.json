@@ -15,5 +15,8 @@
     },
     "messageBoxStyle": {
         "message": "請選擇提示樣式："
+    },
+    "isNotANumber": {
+        "message": "不是一個數位。"
     }
 }
