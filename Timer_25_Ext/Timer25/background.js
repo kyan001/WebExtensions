@@ -75,7 +75,7 @@ function popMessageBox(){
         }
         if(items.playSound == 'yes'){
             sound.play()
-            sound.addEventListener("ended", msgBoxFunction, false)  // pop alert after sound played. Or "alert()" will block the playing sound.
+            setTimeout(msgBoxFunction, 10)  // prevent "alert()" blocks the playing sound.
         } else {
             msgBoxFunction()
         }
