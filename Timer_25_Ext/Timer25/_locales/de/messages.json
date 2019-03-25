@@ -1,31 +1,31 @@
 {
     "extName": {
-        "message": "Timer 25: der minimalistische Timer",
-        "description": "Extension name."
+        "message": "Timer 25: Der minimalistische Timer",
+        "description": "Erweiterungsname."
     },
     "extDesc": {
-        "message": "Ein minimalistischer 25-Minuten-Timer. Einfach, zuverlässig und einfach zu bedienen. ",
-        "description": "Extension description for manifest.json"
+        "message": "Ein minimalistischer 25-Minuten-Timer. Einfach, zuverlässing und einfach zu bedienen. ",
+        "description": "Erweiterungsbeschreibung für manifest.json"
     },
     "timeUp": {
-        "message": "DIE ZEIT IST UM! "
+        "message": "ZEIT ABGELAUFEN! "
     },
     "saved": {
-        "message": "Gerettet! "
+        "message": "Gespeichert! "
     },
     "messageBoxStyle": {
-        "message": "Nachricht ch Stil: "
+        "message": "Nachrichtenfeld-Style: "
     },
     "messageBoxHere": {
-        "message": "Wenn die Zeit abgelaufen ist, wird dieses Meldungsfeld angezeigt. "
+        "message": "Wenn die Zeit abgelaufen ist, wird dieses Feld angezeigt. "
     },
     "extraOptions": {
-        "message": "Extra Optionen: "
+        "message": "Zusatzoptionen: "
     },
     "isNotANumber": {
-        "message": "ist keine Nummer. "
+        "message": "ist keine Zahl. "
     },
     "playSoundOption": {
-        "message": "Spielen Sie einen Ton, wenn die Zeit abgelaufen ist. "
+        "message": "Spielt ein Geräusch, wenn die Zeit abgelaufen ist. "
     }
 }
