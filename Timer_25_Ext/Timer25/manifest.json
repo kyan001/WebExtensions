@@ -1,8 +1,8 @@
 
 {
     "name": "__MSG_extName__",
-    "version": "1.10.7",
-    "short_name": "T25",
+    "version": "1.11.1",
+    "short_name": "Timer25",
     "description": "__MSG_extDesc__",
     "manifest_version": 2,
     "icons": {
@@ -10,7 +10,7 @@
         "128": "Timer_128.png"
     },
     "omnibox": {
-        "keyword": "T25"
+        "keyword": "Timer"
     },
     "background": {
         "scripts": ["background.js"]
