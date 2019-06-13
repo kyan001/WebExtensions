@@ -17,9 +17,11 @@
 * Enter "timer" in Chrome's address bar and press TAB to start a non-25 minutes timer.
 * [Optional] Play a sound when time's up.
 
-**Focus on one dedicated function, and make it great.**
+## Code & Bug Report
+* [Github Project Page](https://github.com/kyan001/ChromeMyExtens/tree/master/Timer_25_Ext)
+* [Help & Bug Report](https://github.com/kyan001/ChromeMyExtens/issues)
 
-[Github Project Page](https://github.com/kyan001/ChromeMyExtens/tree/master/Timer_25_Ext)
+> **Focus on one dedicated function, and make it great.**
 
 ************
 
