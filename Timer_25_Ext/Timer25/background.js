@@ -21,13 +21,13 @@ var messages = [
     "If you don't have time to do it right, when will you have time to do it over?",
 ]
 
-function reset(){
+function reset () {
     current = 25
     clearTimeout(count_timer)
     chrome.browserAction.setBadgeText({text: ""})
 }
 
-function updateTimerIcon(){
+function updateTimerIcon () {
     if (current <= 0) {
         stop()
         popMessageBox()
@@ -38,13 +38,13 @@ function updateTimerIcon(){
     current--
 }
 
-function popAlert(){
+function popAlert () {
     message_index = Math.round(Math.random()*(messages.length-1))
     message = '"' + messages[message_index] + '"'
     alert(chrome.i18n.getMessage("timeUp") + '\n\n' + message + '\n\n' + (new Date()).toLocaleTimeString())
 }
 
-function popNotification(){
+function popNotification () {
     message_index = Math.round(Math.random()*(messages.length-1))
     message = '"' + messages[message_index] + '"'
     chrome.notifications.create({
@@ -59,8 +59,8 @@ function popNotification(){
     })
 }
 
-function popMessageBox(){
-    chrome.storage.sync.get({msgStyle: 'notif', playSound: 'no'}, function(items){
+function popMessageBox () {
+    chrome.storage.sync.get({msgStyle: 'notif', playSound: 'no'}, function (items) {
         var msgBoxFunction
         switch (items.msgStyle) {
             case 'notif':
@@ -73,7 +73,7 @@ function popMessageBox(){
                 alert('Message Style Option "' + ites.msgStyle + '" is not valid')
                 return false
         }
-        if(items.playSound == 'yes'){
+        if (items.playSound === 'yes') {
             sound.play()
             setTimeout(msgBoxFunction, 10)  // prevent "alert()" blocks the playing sound.
         } else {
@@ -82,12 +82,12 @@ function popMessageBox(){
     })
 }
 
-function start(){
+function start () {
     running = true
     updateTimerIcon()
 }
 
-function stop(){
+function stop () {
     reset()
     running = false
 }
@@ -117,10 +117,10 @@ function setNon25Timer(text) {
 chrome.browserAction.onClicked.addListener(clickToggle)
 chrome.browserAction.setIcon({path: "Timer.png"})
 chrome.browserAction.setBadgeText({text: ""})
-chrome.notifications.onClicked.addListener(function(notificationid){
+chrome.notifications.onClicked.addListener(function (notificationid) {
     chrome.notifications.clear(notificationid)
 })
-chrome.omnibox.onInputEntered.addListener(function(text, disposition){
+chrome.omnibox.onInputEntered.addListener(function (text, disposition) {
     // use chrome address bar and entered a number
     return setNon25Timer(text)
 })
