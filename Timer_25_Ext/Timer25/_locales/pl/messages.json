@@ -27,5 +27,8 @@
     },
     "playSoundOption": {
         "message": "Odtwórz dźwięk, gdy czas się skończy. "
+    },
+    "setNon25Timer": {
+        "message": "Rozpocznij zegar inny niż 25 minut. "
     }
 }

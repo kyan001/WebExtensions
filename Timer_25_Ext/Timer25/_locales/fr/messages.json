@@ -27,5 +27,8 @@
     },
     "playSoundOption": {
         "message": "Jouez un son lorsque le temps est écoulé. "
+    },
+    "setNon25Timer": {
+        "message": "Démarrer un minuteur non 25. "
     }
 }

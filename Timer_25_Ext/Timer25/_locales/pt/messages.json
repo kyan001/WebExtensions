@@ -27,5 +27,8 @@
     },
     "playSoundOption": {
         "message": "Tocar um som quando o tempo acabar. "
+    },
+    "setNon25Timer": {
+        "message": "Inicie um temporizador que não seja de 25 minutos. "
     }
 }

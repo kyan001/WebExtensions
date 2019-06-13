@@ -27,5 +27,8 @@
     },
     "playSoundOption": {
         "message": "Spielt ein Geräusch, wenn die Zeit abgelaufen ist. "
+    },
+    "setNon25Timer": {
+        "message": "Start een niet-25 minuten timer. "
     }
 }

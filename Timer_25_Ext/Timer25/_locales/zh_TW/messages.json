@@ -27,5 +27,8 @@
     },
     "playSoundOption": {
         "message": "計時結束時播放提示音。"
+    },
+    "setNon25Timer": {
+        "message": "啟動一個非 25 分鐘的計時器。"
     }
 }

@@ -27,5 +27,8 @@
     },
     "playSoundOption": {
         "message": "Play a sound when time's up. "
+    },
+    "setNon25Timer": {
+        "message": "Start a non-25 minutes timer. "
     }
 }

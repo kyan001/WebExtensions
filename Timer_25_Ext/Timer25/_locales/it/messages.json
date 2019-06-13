@@ -27,5 +27,8 @@
     },
     "playSoundOption": {
         "message": "Riproduci un suono quando il tempo è scaduto. "
+    },
+    "setNon25Timer": {
+        "message": "Avvia un timer dei minuti diverso da 25. "
     }
 }

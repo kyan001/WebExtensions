@@ -14,7 +14,7 @@
 * When counting down, click again to CANCEL the timer.
 
 ## Extra functions
-* Enter "t25" in Chrome's address bar and press TAB to start a non-25 minutes timer.
+* Enter "timer" in Chrome's address bar and press TAB to start a non-25 minutes timer.
 * [Optional] Play a sound when time's up.
 
 **Focus on one dedicated function, and make it great.**
@@ -24,6 +24,9 @@
 ************
 
 ## Updates
+* 1.11:
+    * Change Chrome omnibox keyword from "t25" to "timer".
+    * Now you can start a non-25 timer from both omnibox and option page.
 * 1.10:
     * Now you can choose to play a sound when time's up.
     * Now you can press the ▶ to see an example of that option.

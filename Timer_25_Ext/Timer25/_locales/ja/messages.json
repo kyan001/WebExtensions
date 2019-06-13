@@ -27,5 +27,8 @@
     },
     "playSoundOption": {
         "message": "時間がたつと音が鳴ります。"
+    },
+    "setNon25Timer": {
+        "message": "25 分以外タイマーを起動します。"
     }
 }
