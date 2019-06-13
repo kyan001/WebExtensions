@@ -1,7 +1,7 @@
 # Timer 25: the Minimalist Timer
 
-> A minimalist 25 minutes timer. Simple, reliable and easy to use.
-> **Focus on one dedicated function, and make it great.**
+> **A minimalist 25 minutes timer.** Simple, reliable and easy to use. \
+> Focus on one dedicated function, and make it great.
 
 * 1 click to set a 25 Minute Timer.
 * Perfect for Pomodoro Technique / Tomato Timer.
