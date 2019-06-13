@@ -103,6 +103,17 @@ function clickToggle() {
     }
 }
 
+function setNon25Timer(text) {
+    if (text === "" || isNaN(text)) {
+        alert('"' + text + '" ' + chrome.i18n.getMessage("isNotANumber"))
+        return false
+    }
+    stop()
+    current = parseInt(text)
+    start()
+    return true
+}
+
 chrome.browserAction.onClicked.addListener(clickToggle)
 chrome.browserAction.setIcon({path: "Timer.png"})
 chrome.browserAction.setBadgeText({text: ""})
@@ -111,12 +122,8 @@ chrome.notifications.onClicked.addListener(function(notificationid){
 })
 chrome.omnibox.onInputEntered.addListener(function(text, disposition){
     // use chrome address bar and entered a number
-    if(isNaN(text)){
-        alert('"' + text + '" ' + chrome.i18n.getMessage("isNotANumber"))
-        return false
-    }
-    stop()
-    current = parseInt(text)
-    start()
-    return true
+    return setNon25Timer(text)
+})
+chrome.omnibox.setDefaultSuggestion({
+    "description": "15 → ◔15:00"
 })
