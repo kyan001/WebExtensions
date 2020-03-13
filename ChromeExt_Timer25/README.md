@@ -19,8 +19,8 @@
 * [Optional] Play a sound when time's up.
 
 ## Code & Bug Report
-* [Github Project Page](https://github.com/kyan001/ChromeMyExtens/tree/master/Timer_25_Ext)
-* [Help & Bug Report](https://github.com/kyan001/ChromeMyExtens/issues)
+* [Github Project Page](https://github.com/kyan001/WebExtensions/tree/master/ChromeExt_Timer25)
+* [Help & Bug Report](https://github.com/kyan001/WebExtensions/issues)
 
 ************
 
