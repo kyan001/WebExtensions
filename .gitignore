@@ -1,5 +1,5 @@
 # macOS ignores
-.DS_Store
+**/.DS_Store
 
 # Keep empty folders
 !**/.gitkeep
