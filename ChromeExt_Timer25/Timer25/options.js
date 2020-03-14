@@ -1,5 +1,5 @@
 function load_options () {
-    chrome.storage.sync.get({msgStyle: "notif", playSound: "no"}, function (items) {
+    chrome.storage.sync.get({ msgStyle: "notif", playSound: "no" }, function (items) {
         /* message style part */
         var msgstyle_input_list = document.querySelectorAll("input[name='msgstyle'")
         for (var i=0; i < msgstyle_input_list.length; i++) {
@@ -29,7 +29,7 @@ function save_options () {
     var playsound_input = document.querySelector("input[name='playsound'")
     var playsound_value = playsound_input.checked ? "yes" : "no"
     /* save */
-    chrome.storage.sync.set({msgStyle: msgstyle, playSound: playsound_value}, function () {
+    chrome.storage.sync.set({ msgStyle: msgstyle, playSound: playsound_value }, function () {
         var status = document.querySelector("#status")
         status.style.display = "inline"
         clearTimeout(stts_clr_tmr)
@@ -106,7 +106,7 @@ chrome.notifications.onClicked.addListener(function (notificationid) {
     chrome.notifications.clear(notificationid)
 })
 document.querySelector("#non25timer__btn").addEventListener("click", function () {
-    var text = chrome.extension.getBackgroundPage().prompt("15 → ◔15:00", "15")
+    var text = chrome.extension.getBackgroundPage().prompt("`timer 5` → ◔5:00", "5")
     if (text !== null) {
         chrome.extension.getBackgroundPage().setNon25Timer(text)
     }

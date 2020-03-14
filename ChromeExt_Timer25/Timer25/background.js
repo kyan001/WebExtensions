@@ -1,7 +1,6 @@
 // @author Kyan
 var current
 var count_timer
-var alert_timer
 var running = false
 var sound = new Audio("sound.mp3")
 var messages = [
@@ -24,7 +23,7 @@ var messages = [
 function reset () {
     current = 25
     clearTimeout(count_timer)
-    chrome.browserAction.setBadgeText({text: ""})
+    chrome.browserAction.setBadgeText({ text: "" })
 }
 
 function updateTimerIcon () {
@@ -34,12 +33,12 @@ function updateTimerIcon () {
         return
     }
     count_timer = setTimeout("updateTimerIcon()", 60000)  // per 60 sec
-    chrome.browserAction.setBadgeText({text: current.toString()+"m"})
+    chrome.browserAction.setBadgeText({ text: current.toString() + "'" })
     current--
 }
 
 function popAlert () {
-    message_index = Math.round(Math.random()*(messages.length-1))
+    message_index = Math.round(Math.random() * (messages.length - 1))
     message = '"' + messages[message_index] + '"'
     alert(chrome.i18n.getMessage("timeUp") + '\n\n' + message + '\n\n' + (new Date()).toLocaleTimeString())
 }
@@ -60,7 +59,7 @@ function popNotification () {
 }
 
 function popMessageBox () {
-    chrome.storage.sync.get({msgStyle: 'notif', playSound: 'no'}, function (items) {
+    chrome.storage.sync.get({ msgStyle: 'notif', playSound: 'no' }, function (items) {
         var msgBoxFunction
         switch (items.msgStyle) {
             case 'notif':
@@ -115,8 +114,8 @@ function setNon25Timer(text) {
 }
 
 chrome.browserAction.onClicked.addListener(clickToggle)
-chrome.browserAction.setIcon({path: "Timer.png"})
-chrome.browserAction.setBadgeText({text: ""})
+chrome.browserAction.setIcon({ path: "Timer.png" })
+chrome.browserAction.setBadgeText({ text: "" })
 chrome.notifications.onClicked.addListener(function (notificationid) {
     chrome.notifications.clear(notificationid)
 })
@@ -125,5 +124,5 @@ chrome.omnibox.onInputEntered.addListener(function (text, disposition) {
     return setNon25Timer(text)
 })
 chrome.omnibox.setDefaultSuggestion({
-    "description": "15 → ◔15:00"
+    "description": "`timer 5` → ◔5:00"
 })
