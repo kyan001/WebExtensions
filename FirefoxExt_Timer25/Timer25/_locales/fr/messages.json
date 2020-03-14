@@ -1,0 +1,37 @@
+{
+    "extName": {
+        "message": "Timer 25: le Timer du Minimalisme",
+        "description": "Extension name."
+    },
+    "extDesc": {
+        "message": "Un timer minimaliste pour 25 minutes. Simple, fiable et facile à utiliser. ",
+        "description": "Extension description for manifest.json"
+    },
+    "timeUp": {
+        "message": "TIME'S UP! "
+    },
+    "saved": {
+        "message": "Enregistré! "
+    },
+    "notifStyle": {
+        "message": "Style de messagerie: "
+    },
+    "notifHere": {
+        "message": "Lorsque le temps est écoulé, cette boîte de message apparaîtra. "
+    },
+    "extraOptions": {
+        "message": "Options supplémentaires: "
+    },
+    "isNotANumber": {
+        "message": "n'est pas un nombre. "
+    },
+    "showNotifOption": {
+        "message": "Show a notification when time's up. "
+    },
+    "playSoundOption": {
+        "message": "Jouez un son lorsque le temps est écoulé. "
+    },
+    "setNon25Timer": {
+        "message": "Démarrer un minuteur non 25. "
+    }
+}

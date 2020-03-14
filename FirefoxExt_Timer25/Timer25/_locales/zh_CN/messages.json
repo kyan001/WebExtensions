@@ -1,0 +1,37 @@
+{
+    "extName": {
+        "message": "Timer 25: 极简计时",
+        "description": "Extension name."
+    },
+    "extDesc": {
+        "message": "一个极简的 25 分钟计时器，简单、可靠、好用。",
+        "description": "Extension description for manifest.json"
+    },
+    "timeUp": {
+        "message": "时间到！"
+    },
+    "saved": {
+        "message": "已保存！"
+    },
+    "notifStyle": {
+        "message": "请选择提示样式："
+    },
+    "notifHere": {
+        "message": "计时结束时，将会显示此提示框。"
+    },
+    "extraOptions": {
+        "message": "额外功能："
+    },
+    "isNotANumber": {
+        "message": "不是一个数字。"
+    },
+    "showNotifOption": {
+        "message": "计时结束时弹出提示框"
+    },
+    "playSoundOption": {
+        "message": "计时结束时播放提示音。"
+    },
+    "setNon25Timer": {
+        "message": "启动一个非 25 分钟的计时器。"
+    }
+}

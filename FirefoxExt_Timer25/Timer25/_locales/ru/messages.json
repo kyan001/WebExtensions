@@ -1,0 +1,37 @@
+{
+    "extName": {
+        "message": "Timer 25: минималистский таймер",
+        "description": "Extension name."
+    },
+    "extDesc": {
+        "message": "Минималистский 25-минутный таймер. Простой, надежный и простой в использовании. ",
+        "description": "Extension description for manifest.json"
+    },
+    "timeUp": {
+        "message": "ВРЕМЯ ВЫШЛО! "
+    },
+    "saved": {
+        "message": "Сохраненный! "
+    },
+    "notifStyle": {
+        "message": "Стиль сообщения: "
+    },
+    "notifHere": {
+        "message": "Когда время закончится, появится это окно сообщения. "
+    },
+    "extraOptions": {
+        "message": "Дополнительные опции: "
+    },
+    "isNotANumber": {
+        "message": "не является числом. "
+    },
+    "showNotifOption": {
+        "message": "Show a notification when time's up. "
+    },
+    "playSoundOption": {
+        "message": "Воспроизведение звука при увеличении времени. "
+    },
+    "setNon25Timer": {
+        "message": "Запустите таймер не 25 минут. "
+    }
+}

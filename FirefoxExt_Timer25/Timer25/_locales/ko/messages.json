@@ -1,0 +1,37 @@
+{
+    "extName": {
+        "message": "Timer 25: 미니멀리스트 타이머",
+        "description": "Extension name."
+    },
+    "extDesc": {
+        "message": "최소 25 분 타이머. 간단하고 안정적이며 사용하기 쉽습니다. ",
+        "description": "Extension description for manifest.json"
+    },
+    "timeUp": {
+        "message": "시간의 최대! "
+    },
+    "saved": {
+        "message": "저장되었습니다! "
+    },
+    "notifStyle": {
+        "message": "메시지 상자 스타일: "
+    },
+    "notifHere": {
+        "message": "시간이되면이 메시지 상자가 나타납니다. "
+    },
+    "extraOptions": {
+        "message": "추가 옵션: "
+    },
+    "isNotANumber": {
+        "message": "은 숫자가 아닙니다. "
+    },
+    "showNotifOption": {
+        "message": "Show a notification when time's up. "
+    },
+    "playSoundOption": {
+        "message": "시간이되면 소리를냅니다. "
+    },
+    "setNon25Timer": {
+        "message": "비 25 분 타이머를 시작하십시오. "
+    }
+}
