@@ -24,9 +24,6 @@
             .text-blue {
                 color: CornflowerBlue;
             }
-            .text-green {
-                color: green;
-            }
             .hidden {
                 display: none;
             }
@@ -39,14 +36,19 @@
                 position: fixed;
                 bottom: 0;
                 right: 0;
+                padding: 1em;
+                margin: 1em;
+                color: white;
                 font-weight: bold;
                 font-size: 1.25em;
+                border-radius: 0.5em;
+                background-color: green;
             }
         </style>
     </head>
     <body>
         <div class="container">
-            <span id="status" class="hidden text-green"></span>
+            <span id="status" class="hidden"></span>
             <div class="session-title">
                 <span id="notifstyle__lable"></span>
             </div>

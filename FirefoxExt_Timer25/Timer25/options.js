@@ -89,5 +89,5 @@ document.querySelector("#shownotif__btn").addEventListener("click", function () 
     })
 })
 document.querySelector("#non25timer__btn").addEventListener("click", function () {
-    alert("Enter `timer` + space")
+    alert("Try to type `timer 5` into you address bar")
 })
