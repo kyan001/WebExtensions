@@ -10,11 +10,7 @@ function load_options () {
         }
         /* play sound part */
         var playsound_input = document.querySelector("input[name='playsound'")
-        if (items.playSound == 'yes') {
-            playsound_input.checked = true
-        } else {
-            playsound_input.checked = false
-        }
+        playsound_input.checked = items.playSound === 'yes' ? true : false
     })
 }
 
@@ -31,10 +27,7 @@ function save_options () {
     }
     /* play sound part */
     var playsound_input = document.querySelector("input[name='playsound'")
-    var playsound_value = "no"
-    if (playsound_input.checked) {
-        playsound_value = "yes"
-    }
+    var playsound_value = playsound_input.checked ? "yes" : "no"
     /* save */
     chrome.storage.sync.set({msgStyle: msgstyle, playSound: playsound_value}, function () {
         var status = document.querySelector("#status")

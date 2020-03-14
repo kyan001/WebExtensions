@@ -1,8 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta http-equiv="Content-Type" content="text/htmll charset=utf-8"/>
         <title>Timer 25 Options</title>
         <style>
+            .container {
+                padding: 25px;
+            }
+            .session-title {
+                font-weight: bold;
+                font-size: 1.25em;
+                border-bottom: 1px solid silver;
+                padding-top: 9px;
+            }
+            #status {
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                padding: 1em;
+                margin: 1em;
+                color: white;
+                font-weight: bold;
+                font-size: 1.25em;
+                border-radius: 0.5em;
+                background-color: green;
+            }
             /* tools */
             .as-pointer {
                 cursor: pointer;
@@ -14,9 +36,6 @@
             .text-blue {
                 color: CornflowerBlue;
             }
-            .text-green {
-                color: green;
-            }
             .hidden {
                 display: none;
             }
@@ -24,71 +43,66 @@
             table {
                 padding: 9px;
             }
-            /* specified */
-            #status {
-                position: fixed;
-                bottom: 0;
-                right: 0;
-            }
         </style>
     </head>
     <body>
-        <h1 id="status" class="hidden text-green"></h1>
-        <h2>
-            <span id="msgstyle__label"></span>
-        </h2>
-        <table>
-            <tr>
-                <td>
-                    <input type="radio" name="msgstyle" value="notif">
-                </td>
-                <td>
-                    <img class="as-pointer as-msgstyle-radio img-responsive" src="img/notif_style.jpg">
-                </td>
-                <td>
-                    <span id="msgstyle_notif__btn" class="as-pointer text-blue">▶</span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="radio" name="msgstyle" value="alert">
-                </td>
-                <td>
-                    <img class="as-pointer as-msgstyle-radio img-responsive" src="img/alert_style.jpg">
-                </td>
-                <td>
-                    <span id="msgstyle_alert__btn" class="as-pointer text-blue">▶</span>
-                </td>
-            </tr>
-        </table>
-        <h2>
-            <span id="extraoption__label"></span>
-        </h2>
-        <table>
-            <tr>
-                <td>
-                    <input type="checkbox" name="playsound" value="yes">
-                </td>
-                <td>
-                    <span id="isplaysound" class="as-pointer as-playsound-checkbox"></span>
-                </td>
-                <td>
-                    <span id="playsound__btn" class="as-pointer text-blue">▶</span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <span class="innerlink as-pointer" href="https://raw.githubusercontent.com/kyan001/WebExtensions/master/ChromeExt_Timer25/Timer25_Resources/ScrnShts_3.png" target="_blank" title="🔗">❓</span>
-                </td>
-                <td>
-                    <span id="non25timer"></span>
-                </td>
-                <td>
-                    <span id="non25timer__btn" class="as-pointer text-blue">▶</span>
-                </td>
-            </tr>
-        </table>
-
+        <div class="container">
+            <h1 id="status" class="hidden text-green"></h1>
+            <div class="session-title">
+                <span id="msgstyle__label"></span>
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        <input type="radio" name="msgstyle" value="notif">
+                    </td>
+                    <td>
+                        <img class="as-pointer as-msgstyle-radio img-responsive" src="img/notif_style.jpg">
+                    </td>
+                    <td>
+                        <span id="msgstyle_notif__btn" class="as-pointer text-blue">▶</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="msgstyle" value="alert">
+                    </td>
+                    <td>
+                        <img class="as-pointer as-msgstyle-radio img-responsive" src="img/alert_style.jpg">
+                    </td>
+                    <td>
+                        <span id="msgstyle_alert__btn" class="as-pointer text-blue">▶</span>
+                    </td>
+                </tr>
+            </table>
+            <div class="session-title">
+                <span id="extraoption__label"></span>
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="playsound" value="yes">
+                    </td>
+                    <td>
+                        <span id="isplaysound" class="as-pointer as-playsound-checkbox"></span>
+                    </td>
+                    <td>
+                        <span id="playsound__btn" class="as-pointer text-blue">▶</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="innerlink as-pointer" href="https://raw.githubusercontent.com/kyan001/WebExtensions/master/ChromeExt_Timer25/Timer25_Resources/ScrnShts_3.png" target="_blank" title="🔗">🔗</span>
+                    </td>
+                    <td>
+                        <span id="non25timer"></span>
+                    </td>
+                    <td>
+                        <span id="non25timer__btn" class="as-pointer text-blue">▶</span>
+                    </td>
+                </tr>
+            </table>
+        </div><!--.container-->
         <script src="options.js"></script>
     </body>
 </html>
