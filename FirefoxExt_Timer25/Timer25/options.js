@@ -83,11 +83,13 @@ document.querySelector("#shownotif__btn").addEventListener("click", function () 
         iconUrl: 'Timer.png',
         title: text,
         message: (new Date()).toLocaleTimeString(),
-        contextMessage: "Timer25",
-        eventTime: Date.now(),  // add a event time stamp
-        priority: 2
+        contextMessage: "Timer 25",
+        eventTime: Date.now()  // add a event time stamp
     })
 })
 document.querySelector("#non25timer__btn").addEventListener("click", function () {
-    alert("Try to type `timer 5` into you address bar")
+    var text = prompt("5 → ◔5:00", "5")
+    if (text !== null) {
+        browser.extension.getBackgroundPage().setNon25Timer(text)
+    }
 })

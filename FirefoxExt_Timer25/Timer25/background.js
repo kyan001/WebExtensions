@@ -32,7 +32,7 @@ function updateTimerIcon () {
         popMessageBox()
         return
     }
-    count_timer = setTimeout("updateTimerIcon()", 60000)  // per 60 sec
+    count_timer = setTimeout(updateTimerIcon, 60000)  // per 60 sec
     browser.browserAction.setBadgeText({text: current.toString() + "'"})
     current--
 }
@@ -84,15 +84,15 @@ function clickToggle() {
 }
 
 function setNon25Timer(text) {
-    if (text === "" || isNaN(text)) {
+    text = text.trim()
+    if (!text || isNaN(text)) {
         browser.notifications.create({
             type: 'basic',
             iconUrl: 'Timer.png',
             title: '✖!!!',
             message: '"' + text + '" ' + browser.i18n.getMessage("isNotANumber"),
-            contextMessage: "Timer25",
-            eventTime: Date.now(),  // add a event time stamp
-            priority: 2
+            contextMessage: "Timer 25",
+            eventTime: Date.now()  // add a event time stamp
         })
         return false
     }
@@ -113,18 +113,16 @@ browser.omnibox.onInputEntered.addListener(function (text, disposition) {
     }
     return setNon25Timer(text)
 })
-browser.omnibox.setDefaultSuggestion({
-    "description": "`timer 5` = ◔5:00"
-})
+// browser.omnibox.setDefaultSuggestion({
+//     "description": "Timer 25"
+// })
 browser.omnibox.onInputChanged.addListener((text, suggest) => {
-    var suggestions = []
-    for (last_digit of ['0', '5']) {
-        let t = text + last_digit
-        let suggestion = {
-            content: t,
-            description: "◔" + t + ":00"
-        }
-        suggestions.push(suggestion)
+    if (!text || isNaN(text)) {
+        return null
     }
+    let suggestions = [{
+        content: text + " ",
+        description: "⏱" + text + ":00"
+    }]
     suggest(suggestions)
 })
