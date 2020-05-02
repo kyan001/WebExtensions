@@ -38,23 +38,25 @@ function updateTimerIcon () {
 }
 
 function popAlert () {
-    message_index = Math.round(Math.random() * (messages.length - 1))
-    message = '"' + messages[message_index] + '"'
+    var message_index = Math.round(Math.random() * (messages.length - 1))
+    var message = '"' + messages[message_index] + '"'
     alert(chrome.i18n.getMessage("timeUp") + '\n\n' + message + '\n\n' + (new Date()).toLocaleTimeString())
 }
 
 function popNotification () {
-    message_index = Math.round(Math.random()*(messages.length-1))
-    message = '"' + messages[message_index] + '"'
-    chrome.notifications.create({
-        type: 'basic',
-        iconUrl: 'Timer.png',
-        title: chrome.i18n.getMessage("timeUp"),
-        message: message,
-        contextMessage: (new Date()).toLocaleTimeString(),  // in gray text
-        eventTime: Date.now(),  // add a event time stamp
-        isClickable: true,  // show hand pointer when hover
-        requireInteraction: true,  // do not close until click
+    var message_index = Math.round(Math.random()*(messages.length-1))
+    var message = '"' + messages[message_index] + '"'
+    chrome.storage.sync.get({ reqClick: 'yes' }, function (items) {
+        chrome.notifications.create({
+            type: 'basic',
+            iconUrl: 'Timer.png',
+            title: chrome.i18n.getMessage("timeUp"),
+            message: message,
+            contextMessage: (new Date()).toLocaleTimeString(),  // in gray text
+            eventTime: Date.now(),  // add a event time stamp
+            isClickable: true,  // show hand pointer when hover
+            requireInteraction: (items.reqClick === 'yes'),  // if true, do not close until click
+        })
     })
 }
 

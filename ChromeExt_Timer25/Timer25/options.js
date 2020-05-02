@@ -1,7 +1,7 @@
 function load_options () {
-    chrome.storage.sync.get({ msgStyle: "notif", playSound: "no" }, function (items) {
+    chrome.storage.sync.get({ msgStyle: "notif", playSound: "no", reqClick: "yes" }, function (items) {
         /* message style part */
-        var msgstyle_input_list = document.querySelectorAll("input[name='msgstyle'")
+        var msgstyle_input_list = document.querySelectorAll("input[name='msgstyle']")
         for (var i=0; i < msgstyle_input_list.length; i++) {
             var current_ele = msgstyle_input_list[i]
             if (current_ele.value == items.msgStyle){
@@ -9,15 +9,18 @@ function load_options () {
             }
         }
         /* play sound part */
-        var playsound_input = document.querySelector("input[name='playsound'")
+        var playsound_input = document.querySelector("input[name='playsound']")
         playsound_input.checked = items.playSound === 'yes' ? true : false
+        /* notification require click */
+        var reqclick_input = document.querySelector("input[name='reqclick']")
+        reqclick_input.checked = items.reqClick === 'yes' ? true : false
     })
 }
 
 var stts_clr_tmr
 function save_options () {
     /* message style part */
-    var msgstyle_input_list = document.querySelectorAll("input[name='msgstyle'")
+    var msgstyle_input_list = document.querySelectorAll("input[name='msgstyle']")
     var msgstyle = "notif"  // default
     for (var i=0; i < msgstyle_input_list.length; i++) {
         var current_ele = msgstyle_input_list[i]
@@ -26,17 +29,26 @@ function save_options () {
         }
     }
     /* play sound part */
-    var playsound_input = document.querySelector("input[name='playsound'")
+    var playsound_input = document.querySelector("input[name='playsound']")
     var playsound_value = playsound_input.checked ? "yes" : "no"
+    /* notification require click */
+    var requireclick_input = document.querySelector("input[name='reqclick']")
+    var requireclick_value = requireclick_input.checked ? "yes" : "no"
     /* save */
-    chrome.storage.sync.set({ msgStyle: msgstyle, playSound: playsound_value }, function () {
-        var status = document.querySelector("#status")
-        status.style.display = "inline"
-        clearTimeout(stts_clr_tmr)
-        stts_clr_tmr = setTimeout(function () {
-            status.style.display = "none"
-        }, 1000)
-    })
+    chrome.storage.sync.set(
+        {
+            msgStyle: msgstyle,
+            playSound: playsound_value,
+            reqClick: requireclick_value,
+        }, function () {
+            var status = document.querySelector("#status")
+            status.style.display = "inline"
+            clearTimeout(stts_clr_tmr)
+            stts_clr_tmr = setTimeout(function () {
+                status.style.display = "none"
+            }, 1000)
+        }
+    )
 }
 
 function i18n () {
@@ -44,6 +56,7 @@ function i18n () {
     document.getElementById("extraoption__label").innerHTML = chrome.i18n.getMessage("extraOptions")
     document.querySelector("#status").textContent = chrome.i18n.getMessage("saved")
     document.querySelector("#isplaysound").textContent = chrome.i18n.getMessage("playSoundOption")
+    document.querySelector("#isreqclick").textContent = chrome.i18n.getMessage("requireClickOption")
     document.querySelector("#non25timer").textContent = chrome.i18n.getMessage("setNon25Timer")
 }
 
@@ -69,6 +82,9 @@ document.querySelectorAll("input[name='msgstyle']").forEach(function (val, ind, 
 document.querySelectorAll("input[name='playsound']").forEach(function (val, ind, arr) {
     arr[ind].addEventListener("click", save_options)
 })
+document.querySelectorAll("input[name='reqclick']").forEach(function (val, ind, arr) {
+    arr[ind].addEventListener("click", save_options)
+})
 document.querySelectorAll(".as-msgstyle-radio").forEach(function (val, ind, arr) {
     arr[ind].addEventListener("click", function () {
         this.parentNode.parentNode.querySelector("input[name='msgstyle']").click()
@@ -79,14 +95,15 @@ document.querySelectorAll(".as-playsound-checkbox").forEach(function (val, ind, 
         this.parentNode.parentNode.querySelector("input[name='playsound']").click()
     })
 })
-
-// play option's example
-document.querySelector("#playsound__btn").addEventListener("click", function () {
-    var sound = new Audio("sound.mp3")
-    sound.play()
+document.querySelectorAll(".as-reqclick-checkbox").forEach(function (val, ind, arr) {
+    arr[ind].addEventListener("click", function () {
+        this.parentNode.parentNode.querySelector("input[name='reqclick']").click()
+    })
 })
-document.querySelector("#msgstyle_notif__btn").addEventListener("click", function () {
+
+function pop_notification () {
     var text = chrome.i18n.getMessage("messageBoxHere")
+    var require_click = document.querySelector("input[name='reqclick']").checked
     chrome.notifications.create({
         type: 'basic',
         iconUrl: 'Timer.png',
@@ -95,9 +112,16 @@ document.querySelector("#msgstyle_notif__btn").addEventListener("click", functio
         contextMessage: (new Date()).toLocaleTimeString(),  // in gray text
         eventTime: Date.now(),  // add a event time stamp
         isClickable: true,  // show hand pointer when hover
-        requireInteraction: true,  // do not close until click
+        requireInteraction: require_click,  // if true, do not close until click
     })
+}
+// play option's example
+document.querySelector("#playsound__btn").addEventListener("click", function () {
+    var sound = new Audio("sound.mp3")
+    sound.play()
 })
+document.querySelector("#msgstyle_notif__btn").addEventListener("click", pop_notification)
+document.querySelector("#reqclick__btn").addEventListener("click", pop_notification)
 document.querySelector("#msgstyle_alert__btn").addEventListener("click", function () {
     var text = chrome.i18n.getMessage("messageBoxHere")
     chrome.extension.getBackgroundPage().alert(text + '\n\n' + (new Date()).toLocaleTimeString())
