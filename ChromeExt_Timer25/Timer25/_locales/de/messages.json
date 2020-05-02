@@ -7,6 +7,12 @@
         "message": "Ein minimalistischer 25-Minuten-Timer. Einfach, zuverlässing und einfach zu bedienen. ",
         "description": "Erweiterungsbeschreibung für manifest.json"
     },
+    "LangCode": {
+        "message": "de"
+    },
+    "LangName": {
+        "message": "German"
+    },
     "timeUp": {
         "message": "ZEIT ABGELAUFEN! "
     },
@@ -27,6 +33,9 @@
     },
     "playSoundOption": {
         "message": "Spielt ein Geräusch, wenn die Zeit abgelaufen ist. "
+    },
+    "requireClickOption": {
+        "message": "Klicken Sie auf die Benachrichtigung, um sie zu schließen. "
     },
     "setNon25Timer": {
         "message": "Start een niet-25 minuten timer. "

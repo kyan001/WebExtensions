@@ -7,6 +7,12 @@
         "message": "Minimalistyczny zegar 25-minutowy. Prosty, niezawodny i łatwy w użyciu. ",
         "description": "Extension description for manifest.json"
     },
+    "LangCode": {
+        "message": "pl"
+    },
+    "LangName": {
+        "message": "Polish"
+    },
     "timeUp": {
         "message": "KONIEC CZASU! "
     },
@@ -27,6 +33,9 @@
     },
     "playSoundOption": {
         "message": "Odtwórz dźwięk, gdy czas się skończy. "
+    },
+    "requireClickOption": {
+        "message": "Kliknij powiadomienie, aby je zamknąć. "
     },
     "setNon25Timer": {
         "message": "Rozpocznij zegar inny niż 25 minut. "

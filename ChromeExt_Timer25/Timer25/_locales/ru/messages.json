@@ -7,6 +7,12 @@
         "message": "Минималистский 25-минутный таймер. Простой, надежный и простой в использовании. ",
         "description": "Extension description for manifest.json"
     },
+    "LangCode": {
+        "message": "ru"
+    },
+    "LangName": {
+        "message": "Russian"
+    },
     "timeUp": {
         "message": "ВРЕМЯ ВЫШЛО! "
     },
@@ -27,6 +33,9 @@
     },
     "playSoundOption": {
         "message": "Воспроизведение звука при увеличении времени. "
+    },
+    "requireClickOption": {
+        "message": "Нажмите на уведомление, чтобы отклонить. "
     },
     "setNon25Timer": {
         "message": "Запустите таймер не 25 минут. "

@@ -7,6 +7,12 @@
         "message": "최소 25 분 타이머. 간단하고 안정적이며 사용하기 쉽습니다. ",
         "description": "Extension description for manifest.json"
     },
+    "LangCode": {
+        "message": "ko"
+    },
+    "LangName": {
+        "message": "Korean"
+    },
     "timeUp": {
         "message": "시간의 최대! "
     },
@@ -27,6 +33,9 @@
     },
     "playSoundOption": {
         "message": "시간이되면 소리를냅니다. "
+    },
+    "requireClickOption": {
+        "message": "알림을 클릭하여 닫습니다. "
     },
     "setNon25Timer": {
         "message": "비 25 분 타이머를 시작하십시오. "
