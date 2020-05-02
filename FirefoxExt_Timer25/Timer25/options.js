@@ -3,10 +3,10 @@ var sound = new Audio("sound.mp3")
 function load_options () {
     browser.storage.sync.get({ showNotif: "yes", playSound: "no" }, function (items) {
         /* show notif part */
-        var shownotif_input = document.querySelector("input[name='shownotif'")
+        var shownotif_input = document.querySelector("input[name='shownotif']")
         shownotif_input.checked = items.showNotif === 'yes' ? true : false
         /* play sound part */
-        var playsound_input = document.querySelector("input[name='playsound'")
+        var playsound_input = document.querySelector("input[name='playsound']")
         playsound_input.checked = items.playSound === 'yes' ? true : false
     })
 }
@@ -14,10 +14,10 @@ function load_options () {
 var stts_clr_tmr
 function save_options () {
     /* show notif part */
-    var shownotif_input = document.querySelector("input[name='shownotif'")
+    var shownotif_input = document.querySelector("input[name='shownotif']")
     var shownotif_value = shownotif_input.checked ? "yes" : "no"
     /* play sound part */
-    var playsound_input = document.querySelector("input[name='playsound'")
+    var playsound_input = document.querySelector("input[name='playsound']")
     var playsound_value = playsound_input.checked ? "yes" : "no"
     /* save */
     browser.storage.sync.set({showNotif: shownotif_value, playSound: playsound_value}, function () {

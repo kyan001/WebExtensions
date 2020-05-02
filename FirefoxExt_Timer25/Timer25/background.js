@@ -38,8 +38,8 @@ function updateTimerIcon () {
 }
 
 function popNotification () {
-    message_index = Math.round(Math.random() * (messages.length - 1))
-    message = '"' + messages[message_index] + '"'
+    var message_index = Math.round(Math.random() * (messages.length - 1))
+    var message = '"' + messages[message_index] + '"'
     browser.notifications.create({
         type: 'basic',
         iconUrl: 'Timer.png',
