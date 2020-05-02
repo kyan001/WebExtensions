@@ -19,8 +19,8 @@
 * Enter "timer" in Firefox's address bar and press SPACE to start a non-25 minutes timer.
 
 ## Code & Bug Report
-* [Github Project Page](https://github.com/kyan001/WebExtensions/tree/master/FirefoxExt_Timer25)
-* [Help & Bug Report](https://github.com/kyan001/WebExtensions/issues)
+* Github Project Page: https://github.com/kyan001/WebExtensions/tree/master/FirefoxExt_Timer25
+* Help & Bug Report: https://github.com/kyan001/WebExtensions/issues
 
 ```html
 <Strong>Timer 25: the Minimalist Timer</Strong>
