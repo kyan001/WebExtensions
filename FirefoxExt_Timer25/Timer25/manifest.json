@@ -1,7 +1,7 @@
 
 {
     "name": "__MSG_extName__",
-    "version": "1.15.2",
+    "version": "1.15.5",
     "browser_specific_settings": {
         "gecko": {
             "id": "timer25@kyan001.com"
