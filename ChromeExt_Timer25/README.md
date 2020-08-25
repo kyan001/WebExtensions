@@ -23,7 +23,7 @@
 ## Code & Bug Report
 * Github Project Page: https://github.com/kyan001/WebExtensions/tree/master/ChromeExt_Timer25
 * Help & Bug Report: https://github.com/kyan001/WebExtensions/issues
-
+* Updates: https://github.com/kyan001/WebExtensions/blob/master/ChromeExt_Timer25/UPDATES.md
 ************
 
 ## Updates
