@@ -1,5 +1,5 @@
 // @author Kyan
-var current
+var current = 25
 var count_timer
 var running = false
 var sound = new Audio("sound.mp3")
@@ -21,20 +21,20 @@ var messages = [
 ]
 
 function reset () {
-    current = 25
+    window.current = localStorage.getItem("defCountdown") || 25
     clearTimeout(count_timer)
     browser.browserAction.setBadgeText({ text: "" })
 }
 
 function updateTimerIcon () {
-    if (current <= 0) {
+    if (window.current <= 0) {
         stop()
         popMessageBox()
         return
     }
     count_timer = setTimeout(updateTimerIcon, 60000)  // per 60 sec
-    browser.browserAction.setBadgeText({text: current.toString() + "'"})
-    current--
+    browser.browserAction.setBadgeText({text: window.current.toString() + "'"})
+    window.current--
 }
 
 function popNotification () {
@@ -63,18 +63,18 @@ function popMessageBox () {
 }
 
 function start () {
-    running = true
+    window.running = true
     updateTimerIcon()
 }
 
 function stop () {
     reset()
-    running = false
+    window.running = false
 }
 
 function clickToggle() {
     reset()
-    if (running) {
+    if (window.running) {
         // stop() -> reset()
         stop()
     } else {
@@ -97,7 +97,7 @@ function setNon25Timer(text) {
         return false
     }
     stop()
-    current = parseInt(text)
+    window.current = parseInt(text)
     start()
     return true
 }

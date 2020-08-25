@@ -38,6 +38,8 @@
             }
             .hidden {
                 display: none;
+            }.text-grey {
+                color: grey;
             }
             /* commons */
             table {
@@ -48,6 +50,13 @@
     <body>
         <div class="container">
             <span id="status" class="hidden"></span>
+            <div class="session-title">
+                <span id="countdown__session"></span>
+            </div>
+            <div>
+                <input id="countdown__input" type="number" name="defcountdown" value="25">
+                <label class="text-grey" for="countdown__input"></label>
+            </div>
             <div class="session-title">
                 <span id="notifstyle__session"></span>
             </div>

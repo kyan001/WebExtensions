@@ -9,6 +9,9 @@ function load_options () {
         var playsound_input = document.querySelector("input[name='playsound']")
         playsound_input.checked = items.playSound === 'yes' ? true : false
     })
+    /* default countdown */
+    var dcd_input = document.querySelector("input[name='defcountdown']")
+    dcd_input.value = localStorage.getItem('defCountdown') || 25
 }
 
 var stts_clr_tmr
@@ -19,6 +22,11 @@ function save_options () {
     /* play sound part */
     var playsound_input = document.querySelector("input[name='playsound']")
     var playsound_value = playsound_input.checked ? "yes" : "no"
+    /* default countdown */
+    var dcd_input = document.querySelector("input[name='defcountdown']")
+    var dcd_value = ( dcd_input.value === "" || isNaN(dcd_input.value))
+        ? 25
+        : parseInt(dcd_input.value)
     /* save */
     browser.storage.sync.set({showNotif: shownotif_value, playSound: playsound_value}, function () {
         var status = document.querySelector("#status")
@@ -28,6 +36,13 @@ function save_options () {
             status.style.display = "none"
         }, 1000)
     })
+    localStorage.setItem("defCountdown", dcd_value)
+}
+
+function update_countdown_label () {
+    var dcd_input = document.querySelector("input[name='defcountdown']")
+    var dcd_label = dcd_input.parentNode.querySelector("label")
+    dcd_label.innerHTML = "(" + dcd_input.value + ":00)"
 }
 
 function i18n () {
@@ -37,6 +52,7 @@ function i18n () {
     document.querySelector("#isshownotif").textContent = browser.i18n.getMessage("showNotifOption")
     document.querySelector("#isplaysound").textContent = browser.i18n.getMessage("playSoundOption")
     document.querySelector("#non25timer").textContent = browser.i18n.getMessage("setNon25Timer")
+    document.querySelector("#countdown__session").innerHTML = chrome.i18n.getMessage("countdownOptions")
 }
 
 document.querySelector(".innerlink").addEventListener("click", function () {
@@ -53,6 +69,7 @@ document.querySelector(".innerlink").addEventListener("click", function () {
 // document.ready events
 document.addEventListener("DOMContentLoaded", load_options)
 document.addEventListener("DOMContentLoaded", i18n)
+document.addEventListener("DOMContentLoaded", update_countdown_label)
 
 // click events
 document.querySelectorAll("input[name='playsound']").forEach(function (val, ind, arr) {
@@ -92,4 +109,12 @@ document.querySelector("#non25timer__btn").addEventListener("click", function ()
     if (text !== null) {
         browser.extension.getBackgroundPage().setNon25Timer(text)
     }
+})
+
+// countdown time settings
+document.querySelectorAll("input[name='defcountdown']").forEach(function (val, ind, arr) {
+    arr[ind].addEventListener("change", save_options)
+})
+document.querySelectorAll("input[name='defcountdown']").forEach(function (val, ind, arr) {
+    arr[ind].addEventListener("input", update_countdown_label)
 })
