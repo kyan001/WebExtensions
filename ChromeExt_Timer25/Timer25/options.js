@@ -39,7 +39,7 @@ function save_options () {
     var requireclick_value = requireclick_input.checked ? "yes" : "no"
     /* default countdown */
     var dcd_input = document.querySelector("input[name='defcountdown']")
-    var dcd_value = ( dcd_input.value === "" || isNaN(dcd_input.value))
+    var dcd_value = ( dcd_input.value === "" || isNaN(dcd_input.value) )
         ? 25
         : parseInt(dcd_input.value)
     /* save */
@@ -63,17 +63,17 @@ function save_options () {
 function update_countdown_label () {
     var dcd_input = document.querySelector("input[name='defcountdown']")
     var dcd_label = dcd_input.parentNode.querySelector("label")
-    dcd_label.innerHTML = "(" + dcd_input.value + ":00)"
+    dcd_label.textContent = "(" + parseInt(dcd_input.value).toString() + ":00)"
 }
 
 function i18n () {
-    document.getElementById("msgstyle__session").innerHTML = chrome.i18n.getMessage("messageBoxStyle")
-    document.getElementById("extraoption__session").innerHTML = chrome.i18n.getMessage("extraOptions")
+    document.getElementById("msgstyle__session").textContent = chrome.i18n.getMessage("messageBoxStyle")
+    document.getElementById("extraoption__session").textContent = chrome.i18n.getMessage("extraOptions")
     document.querySelector("#status").textContent = chrome.i18n.getMessage("saved")
     document.querySelector("#isplaysound").textContent = chrome.i18n.getMessage("playSoundOption")
     document.querySelector("#isreqclick").textContent = chrome.i18n.getMessage("requireClickOption")
     document.querySelector("#non25timer").textContent = chrome.i18n.getMessage("setNon25Timer")
-    document.querySelector("#countdown__session").innerHTML = chrome.i18n.getMessage("countdownOptions")
+    document.querySelector("#countdown__session").textContent = chrome.i18n.getMessage("countdownOptions")
 }
 
 document.querySelector(".innerlink").addEventListener("click", function () {
