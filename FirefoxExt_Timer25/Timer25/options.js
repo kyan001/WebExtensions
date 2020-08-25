@@ -31,8 +31,8 @@ function save_options () {
 }
 
 function i18n () {
-    document.getElementById("notifstyle__lable").textContent = browser.i18n.getMessage("notifStyle")
-    document.getElementById("extraoption__label").textContent = browser.i18n.getMessage("extraOptions")
+    document.getElementById("notifstyle__session").textContent = browser.i18n.getMessage("notifStyle")
+    document.getElementById("extraoption__session").textContent = browser.i18n.getMessage("extraOptions")
     document.querySelector("#status").textContent = browser.i18n.getMessage("saved")
     document.querySelector("#isshownotif").textContent = browser.i18n.getMessage("showNotifOption")
     document.querySelector("#isplaysound").textContent = browser.i18n.getMessage("playSoundOption")
