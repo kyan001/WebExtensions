@@ -39,5 +39,8 @@
     },
     "setNon25Timer": {
         "message": "Démarrer un minuteur non 25. "
+    },
+    "countdownOptions": {
+        "message": "Définir la durée du compte à rebours par défaut: "
     }
 }

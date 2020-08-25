@@ -39,5 +39,8 @@
     },
     "setNon25Timer": {
         "message": "启动一个非 25 分钟的计时器。"
+    },
+    "countdownOptions": {
+        "message": "设置计时器的默认时间："
     }
 }

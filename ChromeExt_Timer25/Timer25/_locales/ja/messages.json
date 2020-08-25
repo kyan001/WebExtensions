@@ -39,5 +39,8 @@
     },
     "setNon25Timer": {
         "message": "25 分以外タイマーを起動します。"
+    },
+    "countdownOptions": {
+        "message": "デフォルトのカウントダウン時間を設定："
     }
 }

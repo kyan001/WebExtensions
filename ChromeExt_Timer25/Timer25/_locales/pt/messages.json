@@ -39,5 +39,8 @@
     },
     "setNon25Timer": {
         "message": "Inicie um temporizador que não seja de 25 minutos. "
+    },
+    "countdownOptions": {
+        "message": "Definir o tempo padrão de contagem regressiva: "
     }
 }

@@ -39,5 +39,8 @@
     },
     "setNon25Timer": {
         "message": "Avvia un timer dei minuti diverso da 25. "
+    },
+    "countdownOptions": {
+        "message": "Imposta tempo conto alla rovescia predefinito: "
     }
 }

@@ -39,5 +39,8 @@
     },
     "setNon25Timer": {
         "message": "啟動一個非 25 分鐘的計時器。"
+    },
+    "countdownOptions": {
+        "message": "設定預設倒數時間："
     }
 }

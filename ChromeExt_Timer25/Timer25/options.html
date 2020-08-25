@@ -39,6 +39,9 @@
             .hidden {
                 display: none;
             }
+            .text-grey {
+                color: grey;
+            }
             /* commons */
             table {
                 padding: 9px;
@@ -50,6 +53,13 @@
             <h1 id="status" class="hidden text-green"></h1>
             <div class="session-title">
                 <span id="msgstyle__label"></span>
+                <span id="countdown__session"></span>
+            </div>
+            <div>
+                <input id="countdown__input" type="number" name="defcountdown" value="25">
+                <label class="text-grey" for="countdown__input"></label>
+            </div>
+            <div class="session-title">
             </div>
             <table>
                 <tr>

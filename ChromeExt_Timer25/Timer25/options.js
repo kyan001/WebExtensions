@@ -15,6 +15,9 @@ function load_options () {
         var reqclick_input = document.querySelector("input[name='reqclick']")
         reqclick_input.checked = items.reqClick === 'yes' ? true : false
     })
+    /* default countdown */
+    var dcd_input = document.querySelector("input[name='defcountdown']")
+    dcd_input.value = localStorage.getItem('defCountdown')
 }
 
 var stts_clr_tmr
@@ -34,6 +37,11 @@ function save_options () {
     /* notification require click */
     var requireclick_input = document.querySelector("input[name='reqclick']")
     var requireclick_value = requireclick_input.checked ? "yes" : "no"
+    /* default countdown */
+    var dcd_input = document.querySelector("input[name='defcountdown']")
+    var dcd_value = ( dcd_input.value === "" || isNaN(dcd_input.value))
+        ? 25
+        : parseInt(dcd_input.value)
     /* save */
     chrome.storage.sync.set(
         {
@@ -49,6 +57,13 @@ function save_options () {
             }, 1000)
         }
     )
+    localStorage.setItem("defCountdown", dcd_value)
+}
+
+function update_countdown_label () {
+    var dcd_input = document.querySelector("input[name='defcountdown']")
+    var dcd_label = dcd_input.parentNode.querySelector("label")
+    dcd_label.innerHTML = "(" + dcd_input.value + ":00)"
 }
 
 function i18n () {
@@ -58,6 +73,7 @@ function i18n () {
     document.querySelector("#isplaysound").textContent = chrome.i18n.getMessage("playSoundOption")
     document.querySelector("#isreqclick").textContent = chrome.i18n.getMessage("requireClickOption")
     document.querySelector("#non25timer").textContent = chrome.i18n.getMessage("setNon25Timer")
+    document.querySelector("#countdown__session").innerHTML = chrome.i18n.getMessage("countdownOptions")
 }
 
 document.querySelector(".innerlink").addEventListener("click", function () {
@@ -74,6 +90,7 @@ document.querySelector(".innerlink").addEventListener("click", function () {
 // document.ready events
 document.addEventListener("DOMContentLoaded", load_options)
 document.addEventListener("DOMContentLoaded", i18n)
+document.addEventListener("DOMContentLoaded", update_countdown_label)
 
 // click events
 document.querySelectorAll("input[name='msgstyle']").forEach(function (val, ind, arr) {
@@ -99,6 +116,12 @@ document.querySelectorAll(".as-reqclick-checkbox").forEach(function (val, ind, a
     arr[ind].addEventListener("click", function () {
         this.parentNode.parentNode.querySelector("input[name='reqclick']").click()
     })
+})
+document.querySelectorAll("input[name='defcountdown']").forEach(function (val, ind, arr) {
+    arr[ind].addEventListener("change", save_options)
+})
+document.querySelectorAll("input[name='defcountdown']").forEach(function (val, ind, arr) {
+    arr[ind].addEventListener("input", update_countdown_label)
 })
 
 function pop_notification () {

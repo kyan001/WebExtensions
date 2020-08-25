@@ -39,5 +39,8 @@
     },
     "setNon25Timer": {
         "message": "Rozpocznij zegar inny niż 25 minut. "
+    },
+    "countdownOptions": {
+        "message": "Ustaw domyślny czas odliczania: "
     }
 }

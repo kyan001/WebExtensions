@@ -27,6 +27,8 @@
 ************
 
 ## Updates
+* 1.15:
+    * Now you can set default countdown time in option page.
 * 1.12:
     * Now you can choose whether the notification box need a click or not.
 * 1.11:
