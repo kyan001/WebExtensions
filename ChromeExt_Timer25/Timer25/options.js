@@ -67,8 +67,8 @@ function update_countdown_label () {
 }
 
 function i18n () {
-    document.getElementById("msgstyle__label").innerHTML = chrome.i18n.getMessage("messageBoxStyle")
-    document.getElementById("extraoption__label").innerHTML = chrome.i18n.getMessage("extraOptions")
+    document.getElementById("msgstyle__session").innerHTML = chrome.i18n.getMessage("messageBoxStyle")
+    document.getElementById("extraoption__session").innerHTML = chrome.i18n.getMessage("extraOptions")
     document.querySelector("#status").textContent = chrome.i18n.getMessage("saved")
     document.querySelector("#isplaysound").textContent = chrome.i18n.getMessage("playSoundOption")
     document.querySelector("#isreqclick").textContent = chrome.i18n.getMessage("requireClickOption")
