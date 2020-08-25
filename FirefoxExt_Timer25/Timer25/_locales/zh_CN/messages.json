@@ -7,6 +7,12 @@
         "message": "一个极简的 25 分钟计时器，简单、可靠、好用。",
         "description": "Extension description for manifest.json"
     },
+    "LangCode": {
+        "message": "zh_CN"
+    },
+    "LangName": {
+        "message": "Chinese (Simplified)"
+    },
     "timeUp": {
         "message": "时间到！"
     },
@@ -33,5 +39,8 @@
     },
     "setNon25Timer": {
         "message": "启动一个非 25 分钟的计时器。"
+    },
+    "countdownOptions": {
+        "message": "设置计时器的默认时间："
     }
 }

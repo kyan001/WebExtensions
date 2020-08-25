@@ -7,6 +7,12 @@
         "message": "極めてシンプルな「タイマー25分」、簡単で使いやすい。",
         "description": "Extension description for manifest.json"
     },
+    "LangCode": {
+        "message": "ja"
+    },
+    "LangName": {
+        "message": "Japanese"
+    },
     "timeUp": {
         "message": "時間切れ！"
     },
@@ -33,5 +39,8 @@
     },
     "setNon25Timer": {
         "message": "25 分以外タイマーを起動します。"
+    },
+    "countdownOptions": {
+        "message": "デフォルトのカウントダウン時間を設定："
     }
 }

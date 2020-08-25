@@ -7,6 +7,12 @@
         "message": "Ein minimalistischer 25-Minuten-Timer. Einfach, zuverlässing und einfach zu bedienen. ",
         "description": "Erweiterungsbeschreibung für manifest.json"
     },
+    "LangCode": {
+        "message": "de"
+    },
+    "LangName": {
+        "message": "German"
+    },
     "timeUp": {
         "message": "ZEIT ABGELAUFEN! "
     },
@@ -33,5 +39,8 @@
     },
     "setNon25Timer": {
         "message": "Start een niet-25 minuten timer. "
+    },
+    "countdownOptions": {
+        "message": "Standard-Countdown-Zeit einstellen: "
     }
 }

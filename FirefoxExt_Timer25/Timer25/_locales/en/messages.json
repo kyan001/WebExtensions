@@ -7,6 +7,12 @@
         "message": "A minimalist 25 minutes timer. Simple, reliable and easy to use. ",
         "description": "Extension description for manifest.json"
     },
+    "LangCode": {
+        "message": "en"
+    },
+    "LangName": {
+        "message": "English"
+    },
     "timeUp": {
         "message": "TIME'S UP! "
     },
@@ -33,5 +39,8 @@
     },
     "setNon25Timer": {
         "message": "Start a non-25 minutes timer. "
+    },
+    "countdownOptions": {
+        "message": "Set Default Countdown Time: "
     }
 }

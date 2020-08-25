@@ -7,6 +7,12 @@
         "message": "Un temporizador minimalista de 25 minutos. Simple, confiable y fácil de usar. ",
         "description": "Extension description for manifest.json"
     },
+    "LangCode": {
+        "message": "es"
+    },
+    "LangName": {
+        "message": "Spanish"
+    },
     "timeUp": {
         "message": "¡SE ACABÓ EL TIEMPO! "
     },
@@ -33,5 +39,8 @@
     },
     "setNon25Timer": {
         "message": "Iniciar un temporizador de minutos no 25. "
+    },
+    "countdownOptions": {
+        "message": "Establecer el tiempo de cuenta atrás predeterminado: "
     }
 }

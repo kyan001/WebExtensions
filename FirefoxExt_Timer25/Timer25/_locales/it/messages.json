@@ -7,6 +7,12 @@
         "message": "Un timer minimalista di 25 minuti. Semplice, affidabile e facile da usare. ",
         "description": "Extension description for manifest.json"
     },
+    "LangCode": {
+        "message": "it"
+    },
+    "LangName": {
+        "message": "Italian"
+    },
     "timeUp": {
         "message": "TEMPO SCADUTO! "
     },
@@ -33,5 +39,8 @@
     },
     "setNon25Timer": {
         "message": "Avvia un timer dei minuti diverso da 25. "
+    },
+    "countdownOptions": {
+        "message": "Imposta tempo conto alla rovescia predefinito: "
     }
 }
