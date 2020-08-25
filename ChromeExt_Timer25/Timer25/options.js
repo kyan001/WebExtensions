@@ -17,7 +17,7 @@ function load_options () {
     })
     /* default countdown */
     var dcd_input = document.querySelector("input[name='defcountdown']")
-    dcd_input.value = localStorage.getItem('defCountdown')
+    dcd_input.value = localStorage.getItem('defCountdown') || 25
 }
 
 var stts_clr_tmr
