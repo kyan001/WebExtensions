@@ -62,7 +62,7 @@ function save_options () {
 
 function update_countdown_label () {
     var dcd_input = document.querySelector("input[name='defcountdown']")
-    var dcd_label = dcd_input.parentNode.querySelector("label")
+    var dcd_label = dcd_input.parentNode.parentNode.querySelector("label")
     dcd_label.textContent = "(" + parseInt(dcd_input.value).toString() + ":00)"
 }
 
