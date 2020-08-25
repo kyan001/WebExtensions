@@ -24,7 +24,7 @@ function save_options () {
     var playsound_value = playsound_input.checked ? "yes" : "no"
     /* default countdown */
     var dcd_input = document.querySelector("input[name='defcountdown']")
-    var dcd_value = ( dcd_input.value === "" || isNaN(dcd_input.value))
+    var dcd_value = ( dcd_input.value === "" || isNaN(dcd_input.value) )
         ? 25
         : parseInt(dcd_input.value)
     /* save */
