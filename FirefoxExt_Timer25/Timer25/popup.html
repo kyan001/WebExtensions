@@ -6,6 +6,7 @@
     <style>
       .container {
         padding: 25px;
+        width: 15rem;
       }
       .session-title {
         font-weight: bold;
@@ -50,8 +51,6 @@
   </head>
   <body>
     <div class="container">
-      <div class="session-title">
-      </div>
       <span id="status" class="hidden"></span>
       <div class="session-title">
         <span id="overwriteOnce"></span>
@@ -71,33 +70,8 @@
           </td>
         </tr>
       </table>
-      <div class="session-title">
-        <span id="notifstyle__session"></span>
-      </div>
-      <table>
-        <tr>
-          <td>
-            <input type="checkbox" id="shownotif" name="shownotif" value="yes" />
-          </td>
-          <td>
-            <span
-              id="isshownotif"
-              class="as-pointer as-shownotif-checkbox"
-            ></span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <input type="checkbox" id="playsound" name="playsound" value="yes" />
-          </td>
-          <td>
-            <span
-              id="isplaysound"
-              class="as-pointer as-playsound-checkbox"
-            ></span>
-          </td>
-        </tr>
-      </table>
+      <p>You can <u>savely <b>ignore</b> me</u> if you want the default timer.</p>
+      <p> If you want to set a timer with another that your default time, you can simply change the value in the textbox and the timer will set automaticaly</p>
     </div>
     <script src="popup.js"></script>
   </body>

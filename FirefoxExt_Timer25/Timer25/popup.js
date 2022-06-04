@@ -21,10 +21,6 @@ function update_countdown_label () {
 }
 
 function i18n () {
-    document.getElementById("notifstyle__session").textContent = browser.i18n.getMessage("notifStyle")
-    document.querySelector("#status").textContent = browser.i18n.getMessage("saved")
-    document.querySelector("#isshownotif").textContent = browser.i18n.getMessage("showNotifOption")
-    document.querySelector("#isplaysound").textContent = browser.i18n.getMessage("playSoundOption")
     document.querySelector("#overwriteOnce").textContent = chrome.i18n.getMessage("overwriteOnce")
 }
 
@@ -32,14 +28,6 @@ function i18n () {
 document.addEventListener("DOMContentLoaded", load_options)
 document.addEventListener("DOMContentLoaded", i18n)
 document.addEventListener("DOMContentLoaded", update_countdown_label)
-
-// click events
-document.getElementById('playsound').addEventListener("click", async function () {
-    browser.storage.sync.set({ playSound: document.getElementById('playsound').checked ? 'yes' : 'no' })
-})
-document.getElementById('shownotif').addEventListener("click", async function () {
-    browser.storage.sync.set({ showNotif: document.getElementById('shownotif').checked ? 'yes' : 'no' })
-})
 
 // countdown time settings
 document.querySelectorAll("input[name='defcountdown']").forEach(function (val, ind, arr) {
