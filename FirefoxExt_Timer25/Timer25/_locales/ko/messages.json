@@ -42,5 +42,8 @@
     },
     "countdownOptions": {
         "message": "기본 카운트 다운 시간 설정: "
+    },
+    "overwriteOnce": {
+        "message": "이 타이머의 구성을 덮어씁니다.: "
     }
 }

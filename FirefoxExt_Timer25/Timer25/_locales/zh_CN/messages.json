@@ -42,5 +42,8 @@
     },
     "countdownOptions": {
         "message": "设置计时器的默认时间："
+    },
+    "overwriteOnce": {
+        "message": "覆盖此计时器的配置: "
     }
 }

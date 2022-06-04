@@ -42,5 +42,8 @@
     },
     "countdownOptions": {
         "message": "デフォルトのカウントダウン時間を設定："
+    },
+    "overwriteOnce": {
+        "message": "このタイマーの構成を上書きする: "
     }
 }

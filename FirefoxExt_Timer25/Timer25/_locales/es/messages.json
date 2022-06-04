@@ -42,5 +42,8 @@
     },
     "countdownOptions": {
         "message": "Establecer el tiempo de cuenta atrás predeterminado: "
+    },
+    "overwriteOnce": {
+        "message": "Configuración de sobrescritura para este temporizador: "
     }
 }

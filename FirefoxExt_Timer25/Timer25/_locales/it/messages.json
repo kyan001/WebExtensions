@@ -42,5 +42,8 @@
     },
     "countdownOptions": {
         "message": "Imposta tempo conto alla rovescia predefinito: "
+    },
+    "overwriteOnce": {
+        "message": "Sovrascrivi la configurazione per questo timer: "
     }
 }
