@@ -1,14 +1,5 @@
 function load_options () {
-    console.log("load_options")
     browser.extension.getBackgroundPage().clickToggle()
-    browser.storage.sync.get({ showNotif: "yes", playSound: "no" }, function (items) {
-        /* show notif part */
-        var shownotif_input = document.querySelector("input[name='shownotif']")
-        shownotif_input.checked = items.showNotif === 'yes' ? true : false
-        /* play sound part */
-        var playsound_input = document.querySelector("input[name='playsound']")
-        playsound_input.checked = items.playSound === 'yes' ? true : false
-    })
     /* default countdown */
     var dcd_input = document.querySelector("input[name='defcountdown']")
     dcd_input.value = localStorage.getItem('defCountdown') || 25
