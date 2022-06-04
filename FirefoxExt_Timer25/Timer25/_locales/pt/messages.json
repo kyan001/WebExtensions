@@ -42,5 +42,8 @@
     },
     "countdownOptions": {
         "message": "Definir o tempo padrão de contagem regressiva: "
+    },
+    "overwriteOnce": {
+        "message": "Configuração de substituição para este temporizador: "
     }
 }

@@ -23,7 +23,8 @@
     "content_security_policy": "script-src 'self'; object-src 'self'",
     "permissions": [
         "notifications",
-        "storage"
+        "storage",
+        "activeTab"
     ],
     "options_ui": {
         "page": "options.html",
@@ -32,7 +33,8 @@
     },
     "browser_action": {
         "default_icon": "Timer.png",
-        "default_title": "Timer 25"
+        "default_title": "Timer 25",
+        "default_popup": "popup.html"
     },
     "default_locale": "en"
 }

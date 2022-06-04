@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Timer 25 Options</title>
+    <style>
+      .container {
+        padding: 25px;
+        width: 15rem;
+      }
+      .session-title {
+        font-weight: bold;
+        font-size: 1.25em;
+        border-bottom: 1px solid silver;
+        padding-top: 9px;
+      }
+      #status {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 1em;
+        margin: 1em;
+        color: white;
+        font-weight: bold;
+        font-size: 1.25em;
+        border-radius: 0.5em;
+        background-color: green;
+      }
+      /* tools */
+      .as-pointer {
+        cursor: pointer;
+      }
+      .img-responsive {
+        width: 100%;
+        height: auto;
+      }
+      .text-blue {
+        color: CornflowerBlue;
+      }
+      .hidden {
+        display: none;
+      }
+      .text-grey {
+        color: grey;
+      }
+      /* commons */
+      table {
+        padding: 9px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span id="status" class="hidden"></span>
+      <div class="session-title">
+        <span id="overwriteOnce"></span>
+      </div>
+      <table>
+        <tr>
+          <td>
+            <input
+              id="countdown__input"
+              type="number"
+              name="defcountdown"
+              value="25"
+            />
+          </td>
+          <td>
+            <label class="text-grey" for="countdown__input"></label>
+          </td>
+        </tr>
+      </table>
+      <p>You can <u>savely <b>ignore</b> me</u> if you want the default timer.</p>
+      <p> If you want to set a timer with another that your default time, you can simply change the value in the textbox and the timer will set automaticaly</p>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

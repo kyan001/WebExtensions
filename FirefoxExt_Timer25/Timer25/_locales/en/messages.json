@@ -1,46 +1,49 @@
 {
-    "extName": {
-        "message": "Timer 25: the Minimalist Timer",
-        "description": "Extension name."
-    },
-    "extDesc": {
-        "message": "A minimalist 25 minutes timer. Simple, reliable and easy to use. ",
-        "description": "Extension description for manifest.json"
-    },
-    "LangCode": {
-        "message": "en"
-    },
-    "LangName": {
-        "message": "English"
-    },
-    "timeUp": {
-        "message": "TIME'S UP! "
-    },
-    "saved": {
-        "message": "Saved! "
-    },
-    "notifStyle": {
-        "message": "When time's up: "
-    },
-    "notifHere": {
-        "message": "When time's up, a notification will show here. "
-    },
-    "extraOptions": {
-        "message": "Extra Options: "
-    },
-    "isNotANumber": {
-        "message": "is not a number. "
-    },
-    "showNotifOption": {
-        "message": "Show a notification when time's up. "
-    },
-    "playSoundOption": {
-        "message": "Play a sound when time's up. "
-    },
-    "setNon25Timer": {
-        "message": "Start a non-25 minutes timer. "
-    },
-    "countdownOptions": {
-        "message": "Set Default Countdown Time: "
-    }
+  "extName": {
+    "message": "Timer 25: the Minimalist Timer",
+    "description": "Extension name."
+  },
+  "extDesc": {
+    "message": "A minimalist 25 minutes timer. Simple, reliable and easy to use. ",
+    "description": "Extension description for manifest.json"
+  },
+  "LangCode": {
+    "message": "en"
+  },
+  "LangName": {
+    "message": "English"
+  },
+  "timeUp": {
+    "message": "TIME'S UP! "
+  },
+  "saved": {
+    "message": "Saved! "
+  },
+  "notifStyle": {
+    "message": "When time's up: "
+  },
+  "notifHere": {
+    "message": "When time's up, a notification will show here. "
+  },
+  "extraOptions": {
+    "message": "Extra Options: "
+  },
+  "isNotANumber": {
+    "message": "is not a number. "
+  },
+  "showNotifOption": {
+    "message": "Show a notification when time's up. "
+  },
+  "playSoundOption": {
+    "message": "Play a sound when time's up. "
+  },
+  "setNon25Timer": {
+    "message": "Start a non-25 minutes timer. "
+  },
+  "countdownOptions": {
+    "message": "Set Default Countdown Time: "
+  },
+  "overwriteOnce": {
+    "message": "Onetime overwrite: "
+  }
 }

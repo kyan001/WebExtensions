@@ -42,5 +42,8 @@
     },
     "countdownOptions": {
         "message": "設定預設倒數時間："
+    },
+    "overwriteOnce": {
+        "message": "覆蓋此計時器的配置: "
     }
 }

@@ -42,5 +42,8 @@
     },
     "countdownOptions": {
         "message": "Définir la durée du compte à rebours par défaut: "
+    },
+    "overwriteOnce": {
+        "message": "Remplacer la configuration de cette minuterie: "
     }
 }

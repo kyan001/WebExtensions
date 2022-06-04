@@ -42,5 +42,8 @@
     },
     "countdownOptions": {
         "message": "Ustaw domyślny czas odliczania: "
+    },
+    "overwriteOnce": {
+        "message": "Zastąp konfigurację dla tego czasomierza: "
     }
 }

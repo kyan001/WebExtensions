@@ -1,46 +1,49 @@
 {
-    "extName": {
-        "message": "Timer 25: Der minimalistische Timer",
-        "description": "Erweiterungsname."
-    },
-    "extDesc": {
-        "message": "Ein minimalistischer 25-Minuten-Timer. Einfach, zuverlässing und einfach zu bedienen. ",
-        "description": "Erweiterungsbeschreibung für manifest.json"
-    },
-    "LangCode": {
-        "message": "de"
-    },
-    "LangName": {
-        "message": "German"
-    },
-    "timeUp": {
-        "message": "ZEIT ABGELAUFEN! "
-    },
-    "saved": {
-        "message": "Gespeichert! "
-    },
-    "notifStyle": {
-        "message": "Nachrichtenfeld-Style: "
-    },
-    "notifHere": {
-        "message": "Wenn die Zeit abgelaufen ist, wird dieses Feld angezeigt. "
-    },
-    "extraOptions": {
-        "message": "Zusatzoptionen: "
-    },
-    "isNotANumber": {
-        "message": "ist keine Zahl. "
-    },
-    "showNotifOption": {
-        "message": "Show a notification when time's up. "
-    },
-    "playSoundOption": {
-        "message": "Spielt ein Geräusch, wenn die Zeit abgelaufen ist. "
-    },
-    "setNon25Timer": {
-        "message": "Start een niet-25 minuten timer. "
-    },
-    "countdownOptions": {
-        "message": "Standard-Countdown-Zeit einstellen: "
-    }
+  "extName": {
+    "message": "Timer 25: Der minimalistische Timer",
+    "description": "Erweiterungsname."
+  },
+  "extDesc": {
+    "message": "Ein minimalistischer 25-Minuten-Timer. Einfach, zuverlässing und einfach zu bedienen. ",
+    "description": "Erweiterungsbeschreibung für manifest.json"
+  },
+  "LangCode": {
+    "message": "de"
+  },
+  "LangName": {
+    "message": "German"
+  },
+  "timeUp": {
+    "message": "ZEIT ABGELAUFEN! "
+  },
+  "saved": {
+    "message": "Gespeichert! "
+  },
+  "notifStyle": {
+    "message": "Nachrichtenfeld-Style: "
+  },
+  "notifHere": {
+    "message": "Wenn die Zeit abgelaufen ist, wird dieses Feld angezeigt. "
+  },
+  "extraOptions": {
+    "message": "Zusatzoptionen: "
+  },
+  "isNotANumber": {
+    "message": "ist keine Zahl. "
+  },
+  "showNotifOption": {
+    "message": "Show a notification when time's up. "
+  },
+  "playSoundOption": {
+    "message": "Spielt ein Geräusch, wenn die Zeit abgelaufen ist. "
+  },
+  "setNon25Timer": {
+    "message": "Start een niet-25 minuten timer. "
+  },
+  "countdownOptions": {
+    "message": "Standard-Countdown-Zeit einstellen: "
+  },
+  "overwriteOnce": {
+    "message": "Einmaliges überschreiben der Einstellungen: "
+  }
 }
