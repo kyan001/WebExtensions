@@ -44,6 +44,6 @@
     "message": "Set Default Countdown Time: "
   },
   "overwriteOnce": {
-    "message": "Overwrite configuration for this timer: "
+    "message": "Onetime overwrite: "
   }
 }
